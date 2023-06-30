@@ -1,0 +1,133 @@
+/* fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap');
+
+
+/* estilos de la pagina */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* estilos de barra de navegacion */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  
+  background: linear-gradient(black 50%, transparent);
+}
+
+#navbar span{
+  color: aqua;
+}
+
+#navbar a {
+  display: block;
+  font-size: 50px;
+  font-family: 'Martian Mono', monospace;
+  text-decoration: none;
+  color: white;
+  padding: 20px 100px;
+}
+
+#navbar a:hover{
+  animation:heartBeat;
+  animation-duration: 2s;
+}
+
+#navbar ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding-right: 100px;
+}
+
+#navbar ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 16px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+#navbar ul li a:hover {
+  color: aqua;
+  animation:heartBeat;
+  animation-duration: 2s;
+}
+
+
+/* estilos del body */
+
+body {
+  background-color: rgb(3, 30, 55);
+}
+
+/* estilos de la section */
+
+section {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 100px;
+  padding-right: 200px;
+}
+
+#img {
+  padding-top: 30px;
+  animation: backInRight;
+  animation-duration: 2s;
+}
+
+#text {
+  padding-top: 120px;
+  
+  padding-right: 100px;
+}
+
+#text h1 {
+  color: white;
+  font-size: 50px;
+  font-family: "Roboto",sans-serif;
+  font-style: italic;
+  animation: backInLeft;
+  animation-duration: 2s;
+}
+
+#text h1 span{
+  color: aqua;
+}
+
+#text h3 {
+  color:aqua;
+  font-size: 25px;
+  font-family: "Montserrat",sans-serif;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  animation: backInLeft;
+  animation-duration: 2s;
+}
+
+#text p {
+  color: white;
+  font-family: "Roboto",sans-serif;
+  animation: backInLeft;
+  animation-duration: 2s;
+}
+
+/* estilos de la section 2 */
+
+#experiencia h1{
+  font-size: 25px;
+  font-family: "Montserrat",sans-serif;
+  color: white;
+  margin: 0 auto;
+}
+
+@media screen {
+    
+}
