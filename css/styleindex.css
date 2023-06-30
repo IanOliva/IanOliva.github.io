@@ -72,7 +72,7 @@ body {
 #prasec {
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
+  padding-top: 50px;
   padding-left: 100px;
   padding-right: 200px;
   padding-bottom: 100px;
@@ -139,4 +139,8 @@ body {
   
 }
 
-
+#contenedorbloques{
+  border: 1px white solid;
+  display: flex;
+  justify-content: space-between;
+}
