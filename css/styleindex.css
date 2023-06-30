@@ -1,8 +1,7 @@
 /* fuentes */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap");
 
 /* estilos de la pagina */
 * {
@@ -15,25 +14,26 @@
 #navbar {
   display: flex;
   justify-content: space-between;
-  
+
   background: linear-gradient(black 50%, transparent);
+  
 }
 
-#navbar span{
+#navbar span {
   color: aqua;
 }
 
 #navbar a {
   display: block;
   font-size: 50px;
-  font-family: 'Martian Mono', monospace;
+  font-family: "Martian Mono", monospace;
   text-decoration: none;
   color: white;
   padding: 20px 100px;
 }
 
-#navbar a:hover{
-  animation:heartBeat;
+#navbar a:hover {
+  animation: heartBeat;
   animation-duration: 2s;
 }
 
@@ -50,16 +50,15 @@
   text-align: center;
   padding: 30px 16px;
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
 }
 
 #navbar ul li a:hover {
   color: aqua;
-  animation:heartBeat;
+  animation: heartBeat;
   animation-duration: 2s;
 }
-
 
 /* estilos del body */
 
@@ -82,31 +81,34 @@ body {
   padding-top: 30px;
   animation: backInRight;
   animation-duration: 2s;
+  border: 5px solid aqua;
+  
+  
 }
 
 #text {
   padding-top: 120px;
-  
+
   padding-right: 100px;
 }
 
 #text h1 {
   color: white;
   font-size: 50px;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: italic;
   animation: backInLeft;
   animation-duration: 2s;
 }
 
-#text h1 span{
+#text h1 span {
   color: aqua;
 }
 
 #text h3 {
-  color:aqua;
+  color: aqua;
   font-size: 25px;
-  font-family: "Montserrat",sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding-top: 10px;
   padding-bottom: 15px;
   animation: backInLeft;
@@ -115,7 +117,7 @@ body {
 
 #text p {
   color: white;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   animation: backInLeft;
   animation-duration: 2s;
 }
@@ -125,22 +127,66 @@ body {
 #sdasec {
   padding-top: 40px;
   padding-left: 100px;
-  padding-right: 200px;
+  padding-right: 100px;
+  
 }
 
-
-#sdasec h1{
-  
-  font-size: 25px;
-  font-family: "Montserrat",sans-serif;
+#experiencia h1 {
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
   color: white;
   text-align: center;
-  border: 1px white solid;
+
+  padding: 30px 50px;
+}
+
+#primercontenedor {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 30px;
   
 }
 
-#contenedorbloques{
-  border: 1px white solid;
-  display: flex;
-  justify-content: space-between;
+#primerbloque {
+  font-size: 20px;
+
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+#primerbloque h2{
+  color: aqua;
+}
+
+#segundobloque {
+  font-size: 25px;
+  text-align: left;
+  color: white;
+  font-family: "ROboto", sans-serif;
+}
+
+
+#segundocontenedor{
+  display:flex;
+  justify-content: space-evenly;
+  padding: 30px 30px;
+}
+
+
+#tercerbloque{
+  font-size: 20px;
+
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+#tercerbloque h2{
+  color: aqua;
+}
+
+#cuartobloque{
+  font-size: 25px;
+  text-align: left;
+  color: white;
+  font-family: "ROboto", sans-serif;
 }
