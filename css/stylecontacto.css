@@ -5,3 +5,20 @@
 }
 
 
+header div{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+    
+
+
+
+body{
+    background-color: #3A1078;
+}
+
+
+#contactosec{
+    display: ;
+}
