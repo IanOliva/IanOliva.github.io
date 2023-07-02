@@ -158,8 +158,20 @@ body {
 }
 
 
+/* estilos de las secciones sob exp est cur */
 
-/* estilos de las secciones exp est cur */
+
+#sobremi{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.smblock{
+  font-family: "Roboto",sans-serif;
+  color: white;
+}
+
+
 .seccion{
   margin-bottom: 250px;
 }
