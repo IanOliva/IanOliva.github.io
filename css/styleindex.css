@@ -8,10 +8,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* estilos de barra de navegacion */
-header{
+header {
   position: sticky;
   top: 0;
 }
@@ -19,29 +24,16 @@ header{
 #navbar {
   display: flex;
   justify-content: space-between;
-
-  background: linear-gradient(#4E31AA 80%, transparent);
-  
-}
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  margin-top: 30px;
 }
 
 #navbar span {
-  color:  aqua;
+  color: aqua;
 }
 
 #navbar a {
   display: block;
-  font-size: 50px;
+  font-size: 20px;
   font-family: "Martian Mono", monospace;
   text-decoration: none;
   color: white;
@@ -64,10 +56,10 @@ header{
   display: block;
   color: white;
   text-align: center;
-  padding: 40px 16px;
+  padding: 20px 16px;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 #navbar ul li a:hover {
@@ -79,37 +71,49 @@ header{
 /* estilos del body */
 
 body {
-  background-color: #3A1078;
+  background-color: #1b1b1b;
+  
 }
-
-
 
 /* estilos de la section */
 
 #prasec {
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
   padding-left: 100px;
   padding-right: 200px;
-  padding-bottom: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 
+  
 }
+
+#text button {
+  border: none;
+  color: white;
+  background-color: aqua;
+  padding: 16px 10px;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-top: 25px;
+}
+
+
 
 #img {
   padding-top: 30px;
   animation: backInRight;
   animation-duration: 2s;
-  border: 5px dashed #4E31AA;
-  
-  
+  border: 5px dashed aqua;
 }
 
 #text {
-  padding-top: 120px;
-
+  padding-top: 25px;
   padding-right: 100px;
 }
+
 
 #text h1 {
   color: white;
@@ -140,6 +144,20 @@ body {
   animation: backInLeft;
   animation-duration: 2s;
 }
+#textbotones{
+  display: flex;
+  
+}
+
+#textbotones ul a i{
+  color: white;
+  font-size: xx-large;
+  padding: 10px 10px;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+
 
 /* estilos de la section 2 */
 
@@ -147,7 +165,6 @@ body {
   padding-top: 40px;
   padding-left: 100px;
   padding-right: 100px;
-  
 }
 
 #experiencia h1 {
@@ -158,10 +175,9 @@ body {
   padding: 30px 50px;
   text-decoration: underline;
   text-decoration-thickness: 1px;
- 
 
   text-underline-offset: 8px;
-  background-color: #4E31AA;
+  background-color: #4e31aa;
 }
 
 #primercontenedor {
@@ -169,7 +185,6 @@ body {
   justify-content: space-evenly;
   padding: 30px 30px;
   margin: 50px;
-  
 }
 
 #primerbloque {
@@ -179,7 +194,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-#primerbloque h2{
+#primerbloque h2 {
   color: aqua;
 }
 
@@ -190,52 +205,45 @@ body {
   font-family: "ROboto", sans-serif;
 }
 
-
-#segundocontenedor{
-  display:flex;
+#segundocontenedor {
+  display: flex;
   justify-content: space-evenly;
   padding: 30px 30px;
   margin: 50px;
 }
 
-
-#tercerbloque{
+#tercerbloque {
   font-size: 20px;
 
   color: white;
   font-family: "Montserrat", sans-serif;
 }
 
-#tercerbloque h2{
+#tercerbloque h2 {
   color: aqua;
 }
 
-#cuartobloque{
+#cuartobloque {
   font-size: 25px;
-  
+
   color: white;
   font-family: "ROboto", sans-serif;
 }
 
-
-#footer{
-  
+#footer {
   padding: 1rem;
-  background-color: #2F58CD;
+  background-color: #2f58cd;
   text-align: center;
 }
 
-#footer h1{
-  font-family: "Roboto",sans-serif;
+#footer h1 {
+  font-family: "Roboto", sans-serif;
   font-size: xx-large;
   color: white;
 }
 
-
-#footer ul a i{
+#footer ul a i {
   color: white;
   font-size: xx-large;
   padding: 20px 20px;
-  
-  
 }
