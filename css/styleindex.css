@@ -75,7 +75,7 @@ body {
   
 }
 
-/* estilos de la section */
+/* estilos de la seccion principal*/
 
 #prasec {
   display: flex;
@@ -159,15 +159,13 @@ body {
 
 
 
-/* estilos de la section 2 */
-
-#sdasec {
-  padding-top: 40px;
-  padding-left: 100px;
-  padding-right: 100px;
+/* estilos de las secciones exp est cur */
+.seccion{
+  margin-bottom: 250px;
 }
 
-#experiencia h1 {
+
+.titulosblock h1 {
   font-size: 40px;
   font-family: "Montserrat", sans-serif;
   color: white;
@@ -229,6 +227,15 @@ body {
   color: white;
   font-family: "ROboto", sans-serif;
 }
+
+
+
+
+
+
+
+
+
 
 #footer {
   padding: 1rem;
