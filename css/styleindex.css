@@ -17,13 +17,20 @@ html {
 /* estilos de barra de navegacion */
 header {
   position: sticky;
-  top: 0;
+  top:0px;
+  z-index: 1;
+  
+  
+  
 }
 
 #navbar {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
+  backdrop-filter: blur(10px);
+  border-top: 3px solid aqua;
+  
 }
 
 #navbar span {
@@ -178,6 +185,7 @@ body {
 }
 
 .seccion {
+  
   margin-bottom: 250px;
 }
 
@@ -187,6 +195,7 @@ body {
   color: white;
   text-align: center;
   padding: 30px 50px;
+  margin-top: 30px;
   text-decoration: underline;
   text-decoration-thickness: 1px;
 
