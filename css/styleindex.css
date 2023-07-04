@@ -205,7 +205,7 @@ body {
 
 .smblock ul {
   list-style: none;
-  /* list-style-type: circle; */
+  
   list-style-position: inside;
   text-align: center;
 }
