@@ -74,16 +74,13 @@ header {
   animation-duration: 2s;
 }
 
-#navbar ul li a:active{
-  color: aqua;
-  text-shadow: 0px 0px 4px white;
 
-}
 
 /* estilos del body */
 
 body {
-  background-color: #1b1b1b;
+  background-color: rgb(30, 30, 30);
+  
 }
 
 /* estilos de la seccion principal*/
@@ -97,12 +94,19 @@ body {
   
 }
 
-#text button {
+
+#textbotones {
+  display: flex;
+  animation: backInLeft;
+  animation-duration: 2s;
+}
+
+#textbotones button {
   border: none;
   color: white;
   background-color: aqua;
   padding: 16px 10px;
-  font-size: 16px;
+  font-size: 18px;
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 12px;
@@ -111,13 +115,23 @@ body {
 
 #textbotones button:hover{
   transform: scale(1.1,1.1);
+  text-shadow: 0px 0px 4px white;
+}
+
+
+#textbotones ul a i {
+  color: white;
+  font-size: 50px;
+  padding: 10px 10px;
+  margin-top: 25px;
+  padding-left: 30px;
 }
 
 #textbotones ul a i:hover{
   transform: scale(1.2,1.2);
   transition-duration: 0.5s;
+  text-shadow: 0px 0px 4px white;
 }
-
 
 
 #img {
@@ -161,36 +175,27 @@ body {
   animation: backInLeft;
   animation-duration: 2s;
 }
-#textbotones {
-  display: flex;
-  animation: backInLeft;
-  animation-duration: 2s;
-}
 
-#textbotones ul a i {
-  color: white;
-  font-size: xx-large;
-  padding: 10px 10px;
-  margin-top: 25px;
-  margin-left: 30px;
-}
 
 /* estilos de las secciones sob exp est cur */
 
 #smcontenedor {
   display: flex;
-  justify-content: space-evenly;
-  background-color: black;
-
-  margin-bottom: 250px;
+  justify-content: space-around;
+  
+  
 }
 
 .smblock {
-  font-size: 20px;
 
+  width: 250px;
+  height: 175px;
+  
+  font-size: 20px;
+  border: 1px solid white;
   color: white;
   font-family: "Roboto", sans-serif;
-  padding: 100px 30px;
+  
 }
 
 .smblock h3 {
@@ -199,9 +204,27 @@ body {
 }
 
 .smblock ul {
-  list-style-type: circle;
+  list-style: none;
+  /* list-style-type: circle; */
   list-style-position: inside;
+  text-align: center;
 }
+
+
+#iconos{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+ #icono{
+  color: white;
+  font-size: 50px;
+  text-shadow: 0px 0px 4px white;
+  
+  
+}
+
 
 .seccion {
   
