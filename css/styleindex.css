@@ -224,6 +224,7 @@ padding-top: 50px;
 .seccion {
   scroll-margin-top: 100px;
   padding-bottom: 250px;
+  
 }
 
 .titulosblock h1 {
@@ -251,14 +252,19 @@ padding-top: 50px;
   display: flex;
   justify-content: space-evenly;
   padding: 30px 30px;
-  margin: 50px;
+ 
+
+  
 }
+
+
 
 #primerbloque {
   font-size: 20px;
-
   color: white;
   font-family: "Montserrat", sans-serif;
+  width: 400px;
+  height: 200px;
 }
 
 #primerbloque h2 {
@@ -267,23 +273,26 @@ padding-top: 50px;
 
 #segundobloque {
   font-size: 25px;
-  /* text-align: left; */
   color: white;
   font-family: "ROboto", sans-serif;
+  width: 400px;
+  height: 200px;
+  
 }
 
 #segundocontenedor {
   display: flex;
   justify-content: space-evenly;
   padding: 30px 30px;
-  margin: 50px;
+  
 }
 
 #tercerbloque {
   font-size: 20px;
-
   color: white;
   font-family: "Montserrat", sans-serif;
+  width: 400px;
+  height: 200px;
 }
 
 #tercerbloque h2 {
@@ -292,28 +301,26 @@ padding-top: 50px;
 
 #cuartobloque {
   font-size: 25px;
-
   color: white;
-  font-family: "ROboto", sans-serif;
+  font-family: "Roboto", sans-serif;
+  width: 400px;
+  height: 200px;
+  
 }
 
 footer {
-  display: grid;
-  grid: 150px / auto auto auto;
-  grid-gap: 10px;
+  
   background: linear-gradient(360deg, rgba(2,0,36,1) 20%, rgba(9,9,121,1) 50%, rgba(6,78,167,1) 80%, rgba(0,132,201,1) 100%);
 
-  padding: 10px;
+ 
 }
 
 footer div {
-
-  padding: 20px 0;
   font-size: 30px;
 }
 
 #foottext {
-  padding-left: 30%;
+  text-align: center;
 }
 
 footer h1 {
@@ -348,5 +355,7 @@ footer h2 {
 }
 
 #footextra {
+  color: white;
   text-align: center;
+  
 }
