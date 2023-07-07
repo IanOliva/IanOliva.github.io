@@ -1,29 +1,71 @@
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
     <link rel="stylesheet" href="/css/stylecontacto.css"">
-    <script src="https://kit.fontawesome.com/84f1588987.js" crossorigin="anonymous"></script>
-</head>
-<body>
-
+    <script
+      src="https://kit.fontawesome.com/84f1588987.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <div>
-            <a href=""><i class="fa-solid fa-house fa-beat"></i></a>
-            <h1>Contacto</h1>
-        </div>
+      <div>
+        <a href=""><i class="fa-solid fa-house fa-beat"></i></a>
+        <h1>Contacto</h1>
+      </div>
     </header>
     <section id="contactosec">
-        <div id="pbloque">
-            
-            <i class="fa-solid fa-phone">1144198529</i>
-            <i class="fa-solid fa-envelope">ianoliva2000@gmail.com</i>
-            <i class="fa-solid fa-location-dot">Buenos Aires, La Matanza</i>
-        </div>
-        <div id="sbloque">
-
-        </div>
+      <div id="pbloque">
+        <i class="fa-solid fa-phone">1144198529</i>
+        <i class="fa-solid fa-envelope">ianoliva2000@gmail.com</i>
+        <i class="fa-solid fa-location-dot">Buenos Aires, La Matanza</i>
+      </div>
+      <div id="sbloque"></div>
     </section>
-</body>
+
+    <section>
+      <div class="container">
+        <div class="row header">
+          <h1>CONTACTO</h1>
+          <h3>Dejame un Mensaje!</h3>
+        </div>
+        <div class="row body">
+          <form action="#">
+            <ul>
+              <li>
+                <label for="first_name">Nombre</label>
+                <input type="text" name="first_name" placeholder="Nombre" />
+
+                <label for="last_name">Apellido</label>
+                <input type="text" name="last_name" placeholder="Apellido" />
+              </li>
+
+              <li>
+                <p>
+                  <label for="email">email <span class="req">*</span></label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="ejemplo@gmail.com"
+                  />
+                </p>
+              </li>
+              <li><div class="divider"></div></li>
+              <li>
+                <label for="comments">Mensaje</label>
+                <textarea cols="46" rows="3" name="comments"></textarea>
+              </li>
+
+              <li>
+                <input class="btn btn-submit" type="submit" value="Submit" />
+                <small>or press <strong>enter</strong></small>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
