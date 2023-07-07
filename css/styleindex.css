@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;600&display=swap');
 /* estilos de la pagina */
 * {
   box-sizing: border-box;
@@ -105,33 +105,38 @@ header {
   display: flex;
   animation: backInLeft;
   animation-duration: 2s;
+  gap: 20px;
 }
 
 #textbotones button {
-  border: none;
-  color: rgb(0, 0, 0);
-  background-color: aqua;
-  padding: 16px 10px;
-  font-size: 18px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  transition-duration: 0.4s;
+  font-family: 'IBM Plex Mono';
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: white;
+  margin: 20px ;
+  padding: 20px 20px;
+  border-radius: 0.25rem;
+  border: solid 2px aqua;
+  box-shadow: 5px 5px aqua;
+  outline-style: none;
+  
+}
+#textbotones button:hover{
   cursor: pointer;
-  border-radius: 12px;
-  margin-top: 25px;
-  margin-left: 5px;
 }
 
-#textbotones button:hover {
-  transform: scale(1.1, 1.1);
-  text-shadow: 0px 0px 4px rgb(255, 255, 255);
+#textbotones button:active {
+  transform: translate(00.125rem, 0.125rem);
+  box-shadow: 2px 2px aqua;
 }
 
 #textbotones ul a i {
   color: white;
   font-size: 50px;
   padding: 10px 10px;
-  margin-top: 25px;
-  padding-left: 30px;
+  margin-top: 15px;
+  
 }
 
 #textbotones ul a i:hover {
