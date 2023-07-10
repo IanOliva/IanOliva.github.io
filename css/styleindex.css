@@ -32,10 +32,13 @@ header {
   top: 0px;
 }
 
+
+
 #navbar {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  
+  
   backdrop-filter: blur(10px);
   border-top: 3px solid aqua;
 }
@@ -58,6 +61,8 @@ header {
   animation-duration: 2s;
   text-shadow: 0px 0px 4px white;
 }
+
+
 
 #navbar ul {
   display: flex;
@@ -82,23 +87,35 @@ header {
   animation-duration: 2s;
 }
 
-#navbar ul li a:target {
-  color: aqua;
+
+
+@media  screen and (max-width: 800px) {
+  
+  #navbar {
+    display: block; 
+  }
+  #navbar ul{
+    display: block;
+  }
+
+
 }
+
 
 /* estilos de la seccion principal*/
 
 #prasec {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 100px;
+  align-items: center;
+  margin-top: 100px;
 }
 
 #text {
   overflow: hidden;
   width: 40%;
 
-  padding-top: 5%;
+  
 }
 
 #textbotones {
@@ -106,12 +123,14 @@ header {
   animation: backInLeft;
   animation-duration: 2s;
   gap: 20px;
+  align-items: center;
 }
 
-#textbotones button {
+#button {
   font-family: 'IBM Plex Mono';
   font-size: 15px;
   font-weight: 700;
+  color: black;
   text-transform: uppercase;
   background-color: white;
   margin: 20px ;
@@ -119,27 +138,38 @@ header {
   border-radius: 0.25rem;
   border: solid 2px aqua;
   box-shadow: 5px 5px aqua;
-  outline-style: none;
+  text-decoration: none;
   
 }
-#textbotones button:hover{
+#button:hover{
   cursor: pointer;
 }
 
-#textbotones button:active {
+#button:active {
   transform: translate(00.125rem, 0.125rem);
   box-shadow: 2px 2px aqua;
 }
 
-#textbotones ul a i {
-  color: white;
-  font-size: 50px;
-  padding: 10px 10px;
-  margin-top: 15px;
+#textbotones ul{
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+ 
   
 }
 
-#textbotones ul a i:hover {
+#textbotones ul li a i {
+  color: white;
+  font-size: 50px;
+  
+  
+  
+}
+
+#textbotones ul li a i:hover {
   transform: scale(1.2, 1.2);
   transition-duration: 0.5s;
   text-shadow: 0px 0px 4px white;
@@ -152,6 +182,11 @@ header {
   box-shadow: 0px 0px 20px aqua;
 }
 
+#text{
+  display: grid;
+  row-gap: 20px;                                                                                     
+}
+
 #text h1 {
   color: white;
   font-size: 50px;
@@ -159,6 +194,7 @@ header {
   font-style: italic;
   animation: backInLeft;
   animation-duration: 2s;
+  margin: 0;
 }
 
 #text h1 span {
@@ -169,10 +205,9 @@ header {
   color: aqua;
   font-size: 25px;
   font-family: "Montserrat", sans-serif;
-  padding-top: 10px;
-  padding-bottom: 15px;
   animation: backInLeft;
   animation-duration: 2s;
+  margin: 0;
 }
 
 #text p {
@@ -181,14 +216,15 @@ header {
   font-family: "Roboto", sans-serif;
   animation: backInLeft;
   animation-duration: 2s;
+  margin: 0;
 }
 
 /* estilos de las secciones sob exp est cur */
 
 #smcontenedor {
   display: flex;
-  justify-content: space-evenly;
-padding-top: 50px;
+  justify-content: space-around;
+  padding-top: 50px;
   
  
 }
@@ -227,6 +263,7 @@ padding-top: 50px;
 }
 
 .seccion {
+  
   scroll-margin-top: 100px;
   padding-bottom: 250px;
   
