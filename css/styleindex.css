@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;600&display=swap");
 /* estilos de la pagina */
 * {
   box-sizing: border-box;
@@ -33,13 +33,10 @@ header {
   top: 0px;
 }
 
-
-
 #navbar {
   display: flex;
   justify-content: space-between;
-  
-  
+
   backdrop-filter: blur(10px);
   border-top: 3px solid aqua;
 }
@@ -54,7 +51,7 @@ header {
   font-family: "Martian Mono", monospace;
   text-decoration: none;
   color: white;
-  
+
   padding: 20px 100px;
 }
 
@@ -63,8 +60,6 @@ header {
   animation-duration: 2s;
   text-shadow: 0px 0px 4px white;
 }
-
-
 
 #navbar ul {
   display: flex;
@@ -89,20 +84,14 @@ header {
   animation-duration: 2s;
 }
 
-
-
-@media  screen and (max-width: 800px) {
-  
+@media screen and (max-width: 800px) {
   #navbar {
-    display: block; 
-  }
-  #navbar ul{
     display: block;
   }
-
-
+  #navbar ul {
+    display: block;
+  }
 }
-
 
 /* estilos de la seccion principal*/
 
@@ -116,8 +105,6 @@ header {
 #text {
   overflow: hidden;
   width: 40%;
-
-  
 }
 
 #textbotones {
@@ -129,21 +116,20 @@ header {
 }
 
 #button {
-  font-family: 'IBM Plex Mono';
+  font-family: "IBM Plex Mono";
   font-size: 1.25em;
   font-weight: 700;
   color: black;
   text-transform: uppercase;
   background-color: white;
-  margin: 20px ;
+  margin: 20px;
   padding: 20px 20px;
   border-radius: 0.25rem;
   border: solid 2px aqua;
   box-shadow: 5px 5px aqua;
   text-decoration: none;
-  
 }
-#button:hover{
+#button:hover {
   cursor: pointer;
 }
 
@@ -152,23 +138,18 @@ header {
   box-shadow: 2px 2px aqua;
 }
 
-#textbotones ul{
+#textbotones ul {
   display: flex;
   list-style-type: none;
   gap: 1.25em;
   align-items: center;
   margin: 0;
   padding: 0;
- 
-  
 }
 
 #textbotones ul li a i {
   color: white;
   font-size: 3.125em;
-  
-  
-  
 }
 
 #textbotones ul li a i:hover {
@@ -184,9 +165,9 @@ header {
   box-shadow: 0px 0px 20px aqua;
 }
 
-#text{
+#text {
   display: grid;
-  row-gap: 1.25em;                                                                                     
+  row-gap: 1.25em;
 }
 
 #text h1 {
@@ -225,26 +206,21 @@ header {
 
 #smcontenedor {
   display: flex;
-  justify-content: stretch;
+  justify-content: space-around;
+
   padding-top: 1.25em;
-  
- 
 }
 
 .smblock {
-  
   width: 250px;
   height: 175px;
   font-size: 1.25em;
   color: white;
   font-family: "Roboto", sans-serif;
-  
-  
 }
 
 .smblock h3 {
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .smblock ul {
@@ -265,10 +241,8 @@ header {
 }
 
 .seccion {
-  
   scroll-margin-top: 100px;
   padding-bottom: 250px;
-  
 }
 
 .titulosblock h1 {
@@ -296,12 +270,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   padding: 30px 30px;
- 
-
-  
 }
-
-
 
 #primerbloque {
   font-size: 1.25em;
@@ -321,14 +290,12 @@ header {
   font-family: "ROboto", sans-serif;
   width: 400px;
   height: 200px;
-  
 }
 
 #segundocontenedor {
   display: flex;
   justify-content: space-evenly;
   padding: 30px 30px;
-  
 }
 
 #tercerbloque {
@@ -349,14 +316,16 @@ header {
   font-family: "Roboto", sans-serif;
   width: 400px;
   height: 200px;
-  
 }
 
 footer {
-  
-  background: linear-gradient(360deg, rgba(2,0,36,1) 20%, rgba(9,9,121,1) 50%, rgba(6,78,167,1) 80%, rgba(0,132,201,1) 100%);
-
- 
+  background: linear-gradient(
+    360deg,
+    rgba(2, 0, 36, 1) 20%,
+    rgba(9, 9, 121, 1) 50%,
+    rgba(6, 78, 167, 1) 80%,
+    rgba(0, 132, 201, 1) 100%
+  );
 }
 
 footer div {
@@ -372,18 +341,23 @@ footer h1 {
   font-size: xx-large;
   color: white;
 }
-#foottext span{
+#foottext span {
   color: aqua;
 }
 
 footer h2 {
   color: white;
   font-size: x-large;
-  font-family: "Montserrat",sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 #footiconos {
   text-align: center;
+}
+
+#footiconos ul {
+  margin: 0;
+  padding: 0;
 }
 
 #footiconos ul a i {
@@ -392,14 +366,8 @@ footer h2 {
   padding: 20px 20px;
 }
 
-#footiconos ul a i:hover{
+#footiconos ul a i:hover {
   transform: scale(1.2, 1.2);
   transition-duration: 0.5s;
   text-shadow: 0px 0px 4px white;
-}
-
-#footextra {
-  color: white;
-  text-align: center;
-  
 }
