@@ -242,6 +242,8 @@ header {
   padding-bottom: 250px;
 }
 
+
+
 .titulosblock h1 {
   font-size: 2.5em;
   font-family: "Montserrat", sans-serif;
@@ -263,56 +265,46 @@ header {
   text-align: center;
 }
 
-#primercontenedor {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 30px 30px;
+
+
+#expcontainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 30px;
+  column-gap: 30px;
+  justify-items: center;
+  
+  
 }
 
-#primerbloque {
+.mainblock {
   font-size: 1.25em;
   color: white;
   font-family: "Montserrat", sans-serif;
-  width: 400px;
-  height: 200px;
+  margin: 0;
+ 
 }
 
-#primerbloque h2 {
+
+
+.mainblock h2 {
   color: aqua;
 }
 
-#segundobloque {
-  font-size: 1.25em;
-  color: white;
-  font-family: "ROboto", sans-serif;
-  width: 400px;
-  height: 200px;
-}
-
-#segundocontenedor {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 30px 30px;
-}
-
-#tercerbloque {
-  font-size: 1.25em;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  width: 400px;
-  height: 200px;
-}
-
-#tercerbloque h2 {
-  color: aqua;
-}
-
-#cuartobloque {
+.detailblock {
   font-size: 1.25em;
   color: white;
   font-family: "Roboto", sans-serif;
   width: 400px;
   height: 200px;
+}
+
+.detailblock ul{
+  margin: 0;
+}
+
+.mainblock ul{
+  margin: 0;
 }
 
 footer {
