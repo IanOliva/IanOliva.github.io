@@ -277,11 +277,31 @@ header {
   
 }
 
+#container{
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 30px;
+  column-gap: 30px;
+  justify-items: center;
+  
+}
+
+#curcontainer{
+  display: grid;
+  grid-template-columns: auto auto ;
+  row-gap: 30px;
+  column-gap: 30px;
+  justify-items: center;
+}
+
 .mainblock {
   font-size: 1.25em;
   color: white;
   font-family: "Montserrat", sans-serif;
+  width: 400px;
+  height: 300px;
   margin: 0;
+  
  
 }
 
