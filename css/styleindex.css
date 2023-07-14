@@ -267,15 +267,8 @@ header {
 
 
 
-#expcontainer {
-  display: grid;
-  grid-template-columns: auto auto;
-  row-gap: 30px;
-  column-gap: 30px;
-  justify-items: center;
-  
-  
-}
+
+
 
 #container{
   display: grid;
@@ -286,20 +279,14 @@ header {
   
 }
 
-#curcontainer{
-  display: grid;
-  grid-template-columns: auto auto ;
-  row-gap: 30px;
-  column-gap: 30px;
-  justify-items: center;
-}
+
 
 .mainblock {
   font-size: 1.25em;
   color: white;
   font-family: "Montserrat", sans-serif;
   width: 400px;
-  height: 300px;
+  height: 200px;
   margin: 0;
   
  
