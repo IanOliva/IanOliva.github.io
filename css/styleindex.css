@@ -31,65 +31,64 @@ body {
 header {
   position: sticky;
   top: 0px;
+  
 }
 
-#navbar {
-  display: flex;
-  justify-content: space-between;
-
+.topnavbar {
+  
   backdrop-filter: blur(10px);
   border-top: 3px solid aqua;
+  overflow: hidden;
 }
 
-#navbar span {
+
+.topnavbar span {
   color: aqua;
 }
 
-#navbar a {
-  display: block;
-  font-size: 1.25em;
+
+
+.topnavbar a{
+  float: left;
+  text-align: center;
   font-family: "Martian Mono", monospace;
   text-decoration: none;
   color: white;
-
-  padding: 20px 100px;
+  padding: 14px 16px;
+  
 }
 
-#navbar a:hover {
-  animation: heartBeat;
-  animation-duration: 2s;
-  text-shadow: 0px 0px 4px white;
-}
-
-#navbar ul {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding-right: 100px;
-}
-
-#navbar ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 20px 16px;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.25em;
-}
-
-#navbar ul li a:hover {
-  color: aqua;
-  animation: heartBeat;
+.topnavbar a:hover {
+  animation: flash;
   animation-duration: 2s;
 }
 
-@media screen and (max-width: 800px) {
-  #navbar {
+.topnavbar .icon{
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnavbar a:not(:first-child) {display: none;}
+  .topnavbar a.icon {
+    float: right;
     display: block;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .topnavbar.responsive {position:relative;}
+  .topnavbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
-  #navbar ul {
-    display: block;
+
+  .topnavbar.responsive  a {
+    float:none;
+    display:block;
+    text-align: center;
+    
   }
 }
 

@@ -1,284 +1,285 @@
 <!DOCTYPE html>
 
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ian Oliva port</title>
-    <!-- css -->
-    <link rel="stylesheet" href="/css/styleindex.css" />
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
-    <script>
-      src = "/bootstrap/js/bootstrap.min.js";
-    </script>
-    <!-- animaciones -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <!-- iconos -->
-    <script
-      src="https://kit.fontawesome.com/84f1588987.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ian Oliva port</title>
+  <!-- css -->
+  <link rel="stylesheet" href="/css/styleindex.css" />
 
-  <body>
-    <header>
-      <div id="navbar">
-        <a id="principal" href="index.html">Ian <span>Oliva</span> </a>
-        <ul>
-          <li><a href="#prasec">Inicio</a></li>
-          <li><a href="#sobremi"> Sobre mi</a></li>
-          <li><a href="#experiencia">Experiencia</a></li>
-          <li><a href="#estudios">Estudios</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </div>
-    </header>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+  <script>
+    src = "/bootstrap/js/bootstrap.min.js";
+  </script>
+  <!-- animaciones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- iconos -->
+  <script src="https://kit.fontawesome.com/84f1588987.js" crossorigin="anonymous"></script>
 
-    <section class="seccion container" id="prasec">
+  <!-- Javascript -->
+  <script src="./javascript/index.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <nav class="topnavbar" id="navbar">
+      <a id="brand" href="index.html">Ian <span>Oliva</span> </a>
       
-        <div id="text">
-          <h1>Hola, soy <span>Ian Oliva</span></h1>
-          <h3>Estudiante</h3>
-          <p>
-            En busca de poder insertarme en el rubro de la tecnología,
-            capacitado en soft skills, estoy dispuesto a escuchar ofertas
-            laborales aprendiendo y aceptando nuevos desafios.
-          </p>
-          <div id="textbotones">
-            <a id="button" href="contacto.html">Contactame!</a>
-            <ul>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/ian-oliva-it/"
-                  target="_blank"
-                  ><i class="fa-brands fa-linkedin"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://github.com/IanOliva" target="_blank"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div id="img">
-          <img src="/img/programmer.png" width="400" height="450" />
-        </div>
-     
-    </section>
+      <a href="#sobremi"> Sobre mi</a></li>
+      <a href="#experiencia">Experiencia</a></li>
+      <a href="#estudios">Estudios</a></li>
+      <a href="contacto.html">Contacto</a></li>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i> </a></li>
+      </a>
 
-    <section class="seccion" id="sobremi">
-      <div class="titulosblock">
-        <h3>Skills</h3>
-        <h1>Mis Habilidades</h1>
-      </div>
-      <div id="smcontenedor">
-        <div class="smblock">
-          <h3>Idioma</h3>
-          <ul>
-            <li>Ingles Intermedio</li>
-          </ul>
-        </div>
 
-        <div class="smblock">
-          <h3>Programación</h3>
-          <ul>
-            <li>C</li>
-            <li>C#</li>
-            <li>Javascript</li>
-          </ul>
-        </div>
 
-        <div class="smblock">
-          <h3>Desarrollo Web</h3>
-          <ul>
-            <li>HTML & CSS</li>
-            <li>Bootstrap</li>
-          </ul>
-        </div>
+    </nav>
+  </header>
 
-        <div class="smblock">
-          <h3>Diseño Gráfico</h3>
-          <ul>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-          </ul>
-        </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("navbar");
+      if (x.className === "topnavbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnavbar";
+      }
+    }
+  </script>
 
-        <div class="smblock">
-          <h3>Software</h3>
-          <ul>
-            <li>office</li>
-            <li>windows & linux</li>
-            <li>windows Server</li>
-            <li>Team viewer</li>
-          </ul>
-        </div>
-        <i class="fa-regular fa-comments" id="icono"></i>
-        <i class="fa-solid fa-code" id="icono"></i>
-        <i class="fa-solid fa-globe" id="icono"></i>
-        <i class="fa-regular fa-pen-to-square" id="icono"></i>
-        <i class="fa-regular fa-folder-open" id="icono"></i>
-      </div>
-    </section>
+  <section class="seccion container" id="prasec">
 
-    <section class="seccion" id="experiencia">
-      <div class="titulosblock">
-        <h3>Experience</h3>
-        <h1>EXPERIENCIA</h1>
-      </div>
-      <div id="container">
-        <div class="mainblock">
-          <ul>
-            <h2>IN Sublimaciones</h2>
-            <h3>Emprendimiento personal</h3>
-            <h4>2020 - actualidad</h4>
-          </ul>
-        </div>
-        <div class="detailblock">
-          <ul>
-            <li>Gestión y Administración</li>
-            <li>Atención al Cliente</li>
-            <li>Marketing</li>
-          </ul>
-        </div>
-        <div class="mainblock">
-          <ul>
-            <h2>Mercado Libre</h2>
-            <h3>Representante de envios</h3>
-            <h4>2020</h4>
-          </ul>
-        </div>
-        <div class="detailblock">
-          <ul>
-            <li>Carga y descarga de paquetería</li>
-            <li>Clasificación de paquetes</li>
-            <li>Recogida y embalaje</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="seccion" id="estudios">
-      <div class="titulosblock">
-        <h3>Studies</h3>
-        <h1>ESTUDIOS</h1>
-      </div>
-      <div id="container">
-        <div class="mainblock">
-          <ul>
-            <h2>Universidad Tecnológica Nacional</h2>
-            <h3>-Sede Cudi</h3>
-            <h4>2021 - en curso</h4>
-          </ul>
-        </div>
-        <div class="detailblock">
-          <ul>
-            <li>Técnico universitario en sistemas informáticos</li>
-            <li>Técnico universitario en programación</li>
-          </ul>
-        </div>
-        <div class="mainblock">
-          <ul>
-            <h2>Instituto La Trinidad</h2>
-            <h3>-Secundario Completo</h3>
-            <h4>2017</h4>
-          </ul>
-        </div>
-        <div class="detailblock">
-          <ul>
-            <li>Bachiller en economía y administración</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="seccion" id="cursos">
-      <div class="titulosblock">
-        <h3>Curses</h3>
-        <h1>CURSOS</h1>
-      </div>
-      <div id="container">
-        <div class="mainblock">
-          <ul>
-            <h2>Comunidad Reparando</h2>
-            <h3>-Reparador de PC</h3>
-            <h4>2022</h4>
-          </ul>
-        </div>
-        <div class="detailblock">
-          <ul>
-            <li>Reparación de computadoras de escritorio y notebooks</li>
-          </ul>
-        </div>
-        <div class="mainblock">
-          <ul>
-            <h2>Google + Junior Achievement Arg</h2>
-            <h3>-Soporte en Tecnologías de la información</h3>
-            <h4>2021</h4>
-          </ul>
-        </div>
-        <div class="detailblock">
-          <ul>
-            <li>Asistencia técnica</li>
-            <li>Redes</li>
-            <li>Sistemas operativos</li>
-            <li>
-              Administración de sistemas y servicios de infraestructura IT
-            </li>
-            <li>Seguridad informática</li>
-          </ul>
-        </div>
-        <div class="mainblock">
-          <ul>
-            <h2>Centro de formación profesional N° 407</h2>
-            <h3>-Practico en diseño grafico</h3>
-            <h3>-Operador de PC bajo entorno grafico</h3>
-            <h3>-Operador de animación computarizada</h3>
-            <h4>2021</h4>
-          </ul>
-        </div>
-
-        <div class="detailblock">
-          <ul>
-            <li>Illustrator</li>
-            <li>Photoshop</li>
-            <li>Manejo de Pc</li>
-            <li>Animación</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div id="foottext">
-        <h1>Ian <span>Oliva</span></h1>
-        <h2>Estudiante</h2>
-      </div>
-      <div id="footiconos">
+    <div id="text">
+      <h1>Hola, soy <span>Ian Oliva</span></h1>
+      <h3>Estudiante</h3>
+      <p>
+        En busca de poder insertarme en el rubro de la tecnología,
+        capacitado en soft skills, estoy dispuesto a escuchar ofertas
+        laborales aprendiendo y aceptando nuevos desafios.
+      </p>
+      <div id="textbotones">
+        <a id="button" href="contacto.html">Contactame!</a>
         <ul>
-          <a href="https://www.linkedin.com/in/ian-oliva-it/" target="_blank"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-          <a href="https://github.com/IanOliva" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a href="mailto:ianoliva2000@gmail.com"
-            ><i class="fa-solid fa-envelope"></i
-          ></a>
-          <a
-            href="https://instagram.com/_ian.olv_?igshid=MzNlNGNkZWQ4Mg=="
-            target="_blank"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
+          <li>
+            <a href="https://www.linkedin.com/in/ian-oliva-it/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/IanOliva" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </li>
         </ul>
       </div>
-    </footer>
-  </body>
+    </div>
+    <div id="img">
+      <img src="/img/programmer.png" width="400" height="450" />
+    </div>
+
+  </section>
+
+  <section class="seccion" id="sobremi">
+    <div class="titulosblock">
+      <h3>Skills</h3>
+      <h1>Mis Habilidades</h1>
+    </div>
+    <div id="smcontenedor">
+      <div class="smblock">
+        <h3>Idioma</h3>
+        <ul>
+          <li>Ingles Intermedio</li>
+        </ul>
+      </div>
+
+      <div class="smblock">
+        <h3>Programación</h3>
+        <ul>
+          <li>C</li>
+          <li>C#</li>
+          <li>Javascript</li>
+        </ul>
+      </div>
+
+      <div class="smblock">
+        <h3>Desarrollo Web</h3>
+        <ul>
+          <li>HTML & CSS</li>
+          <li>Bootstrap</li>
+        </ul>
+      </div>
+
+      <div class="smblock">
+        <h3>Diseño Gráfico</h3>
+        <ul>
+          <li>Photoshop</li>
+          <li>Illustrator</li>
+        </ul>
+      </div>
+
+      <div class="smblock">
+        <h3>Software</h3>
+        <ul>
+          <li>office</li>
+          <li>windows & linux</li>
+          <li>windows Server</li>
+          <li>Team viewer</li>
+        </ul>
+      </div>
+      <i class="fa-regular fa-comments" id="icono"></i>
+      <i class="fa-solid fa-code" id="icono"></i>
+      <i class="fa-solid fa-globe" id="icono"></i>
+      <i class="fa-regular fa-pen-to-square" id="icono"></i>
+      <i class="fa-regular fa-folder-open" id="icono"></i>
+    </div>
+  </section>
+
+  <section class="seccion" id="experiencia">
+    <div class="titulosblock">
+      <h3>Experience</h3>
+      <h1>EXPERIENCIA</h1>
+    </div>
+    <div id="container">
+      <div class="mainblock">
+        <ul>
+          <h2>IN Sublimaciones</h2>
+          <h3>Emprendimiento personal</h3>
+          <h4>2020 - actualidad</h4>
+        </ul>
+      </div>
+      <div class="detailblock">
+        <ul>
+          <li>Gestión y Administración</li>
+          <li>Atención al Cliente</li>
+          <li>Marketing</li>
+        </ul>
+      </div>
+      <div class="mainblock">
+        <ul>
+          <h2>Mercado Libre</h2>
+          <h3>Representante de envios</h3>
+          <h4>2020</h4>
+        </ul>
+      </div>
+      <div class="detailblock">
+        <ul>
+          <li>Carga y descarga de paquetería</li>
+          <li>Clasificación de paquetes</li>
+          <li>Recogida y embalaje</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" id="estudios">
+    <div class="titulosblock">
+      <h3>Studies</h3>
+      <h1>ESTUDIOS</h1>
+    </div>
+    <div id="container">
+      <div class="mainblock">
+        <ul>
+          <h2>Universidad Tecnológica Nacional</h2>
+          <h3>-Sede Cudi</h3>
+          <h4>2021 - en curso</h4>
+        </ul>
+      </div>
+      <div class="detailblock">
+        <ul>
+          <li>Técnico universitario en sistemas informáticos</li>
+          <li>Técnico universitario en programación</li>
+        </ul>
+      </div>
+      <div class="mainblock">
+        <ul>
+          <h2>Instituto La Trinidad</h2>
+          <h3>-Secundario Completo</h3>
+          <h4>2017</h4>
+        </ul>
+      </div>
+      <div class="detailblock">
+        <ul>
+          <li>Bachiller en economía y administración</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" id="cursos">
+    <div class="titulosblock">
+      <h3>Curses</h3>
+      <h1>CURSOS</h1>
+    </div>
+    <div id="container">
+      <div class="mainblock">
+        <ul>
+          <h2>Comunidad Reparando</h2>
+          <h3>-Reparador de PC</h3>
+          <h4>2022</h4>
+        </ul>
+      </div>
+      <div class="detailblock">
+        <ul>
+          <li>Reparación de computadoras de escritorio y notebooks</li>
+        </ul>
+      </div>
+      <div class="mainblock">
+        <ul>
+          <h2>Google + Junior Achievement Arg</h2>
+          <h3>-Soporte en Tecnologías de la información</h3>
+          <h4>2021</h4>
+        </ul>
+      </div>
+      <div class="detailblock">
+        <ul>
+          <li>Asistencia técnica</li>
+          <li>Redes</li>
+          <li>Sistemas operativos</li>
+          <li>
+            Administración de sistemas y servicios de infraestructura IT
+          </li>
+          <li>Seguridad informática</li>
+        </ul>
+      </div>
+      <div class="mainblock">
+        <ul>
+          <h2>Centro de formación profesional N° 407</h2>
+          <h3>-Practico en diseño grafico</h3>
+          <h3>-Operador de PC bajo entorno grafico</h3>
+          <h3>-Operador de animación computarizada</h3>
+          <h4>2021</h4>
+        </ul>
+      </div>
+
+      <div class="detailblock">
+        <ul>
+          <li>Illustrator</li>
+          <li>Photoshop</li>
+          <li>Manejo de Pc</li>
+          <li>Animación</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div id="foottext">
+      <h1>Ian <span>Oliva</span></h1>
+      <h2>Estudiante</h2>
+    </div>
+    <div id="footiconos">
+      <ul>
+        <a href="https://www.linkedin.com/in/ian-oliva-it/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/IanOliva" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:ianoliva2000@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://instagram.com/_ian.olv_?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i
+            class="fa-brands fa-instagram"></i></a>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>
