@@ -9,49 +9,35 @@
   <!-- css -->
   <link rel="stylesheet" href="/css/styleindex.css" />
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
-  <script>
-    src = "/bootstrap/js/bootstrap.min.js";
-  </script>
   <!-- animaciones -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- iconos -->
   <script src="https://kit.fontawesome.com/84f1588987.js" crossorigin="anonymous"></script>
 
   <!-- Javascript -->
-  <script src="./javascript/index.js"></script>
+ <script defer src="/index.js"></script>
 
 </head>
 
 <body>
   <header>
-    <nav class="topnavbar" id="navbar">
-      <a id="brand" href="index.html">Ian <span>Oliva</span> </a>
-      
-      <a href="#sobremi"> Sobre mi</a></li>
-      <a href="#experiencia">Experiencia</a></li>
-      <a href="#estudios">Estudios</a></li>
-      <a href="contacto.html">Contacto</a></li>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i> </a></li>
-      </a>
+    <nav class="navbar">
+      <a class="logo nav-link" href="index.html">Ian <span>Oliva</span> </a>
+      <button class="navtoggle" aria-label="Abrir menu"><i class="fas fa-bars"></i></button>
+      <ul class="nav-menu">
+        <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="#sobremi"> Sobre mi</a></li>
+        <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="#experiencia">Experiencia</a></li>
+        <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="#estudios">Estudios</a></li>
+        <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+
 
 
 
     </nav>
   </header>
 
-  <script>
-    function myFunction() {
-      var x = document.getElementById("navbar");
-      if (x.className === "topnavbar") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnavbar";
-      }
-    }
-  </script>
+ 
 
   <section class="seccion container" id="prasec">
 

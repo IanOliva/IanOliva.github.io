@@ -7,7 +7,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  
 }
 
 html {
@@ -29,68 +29,125 @@ body {
 
 /* estilos de barra de navegacion */
 header {
-  position: sticky;
-  top: 0px;
+  position: fixed;
+  height: 80px;
+  background-color: black;
+  width: 100%;
+  top: 0;
+  left: 0;
   
-}
-
-.topnavbar {
-  
-  backdrop-filter: blur(10px);
   border-top: 3px solid aqua;
-  overflow: hidden;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 992px;
+  margin: 0 auto;
+ 
+}
+.nav-link{
+  color: white;
+  text-decoration: none;
+}
 
-.topnavbar span {
+.logo{
+ font-size: 30px;
+ font-weight: bold;
+ padding: 0 40px;
+ line-height: 80px;
+
+}
+.navbar span {
   color: aqua;
 }
 
-
-
-.topnavbar a{
-  float: left;
-  text-align: center;
-  font-family: "Martian Mono", monospace;
-  text-decoration: none;
-  color: white;
-  padding: 14px 16px;
+.nav-menu{
+  display: flex;
+  margin-right: 40px;
+  list-style-type: none;
   
 }
 
-.topnavbar a:hover {
+.nav-menu-item{
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+
+
+
+.nav-menu-link:hover {
   animation: flash;
   animation-duration: 2s;
 }
 
-.topnavbar .icon{
+.navtoggle{
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
   display: none;
 }
 
+@media(max-width: 768px){
 
-@media screen and (max-width: 600px) {
-  .topnavbar a:not(:first-child) {display: none;}
-  .topnavbar a.icon {
-    float: right;
-    display: block;
-}
-}
 
-@media screen and (max-width: 600px) {
-  .topnavbar.responsive {position:relative;}
-  .topnavbar.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+  body{
+    padding-top: 70px;
   }
 
-  .topnavbar.responsive  a {
-    float:none;
-    display:block;
-    text-align: center;
+  header{
+    height: 60px;
+    backdrop-filter: blur(10px);
+  }
+
+  .logo{
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 60px;
+  }
+
+  .nav-menu{
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    background-color: black;
+    top: 50px;
+    width: 100%;
+    right: 100%;
+    transition: right 0.3s;
+  }
+
+  .nav-menu-item {
+    line-height: 70px;
     
   }
+
+  .navtoggle{
+    display: block;
+  }
+
+  .nav-menu_visible {
+    right:0;
+    
+  }
+
 }
+
+
+
+
+
+ 
 
 /* estilos de la seccion principal*/
 
