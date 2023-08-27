@@ -1,13 +1,10 @@
 /* fuentes */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Sans+3&display=swap');
+
 /* estilos de la pagina */
 * {
   box-sizing: border-box;
   margin: 0;
-  
 }
 
 html {
@@ -18,25 +15,26 @@ html {
 
 body {
   font-size: 16px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgba(2, 0, 36, 1) 20%,
     rgba(9, 9, 121, 1) 50%,
     rgba(6, 78, 167, 1) 80%,
     rgba(0, 132, 201, 1) 100%
-  );
+  ); */
+  background-color: black;
 }
 
 /* estilos de barra de navegacion */
+
 header {
-  position: fixed;
+  position: sticky;
   height: 80px;
   background-color: black;
+  font-family: 'Libre Baskerville', serif;
   width: 100%;
   top: 0;
-  left: 0;
-  
-  border-top: 3px solid aqua;
+  border-top: 3px solid goldenrod;
 }
 
 .navbar {
@@ -44,48 +42,47 @@ header {
   justify-content: space-between;
   max-width: 992px;
   margin: 0 auto;
- 
 }
-.nav-link{
+
+.nav-link {
   color: white;
   text-decoration: none;
 }
 
-.logo{
- font-size: 30px;
- font-weight: bold;
- padding: 0 40px;
- line-height: 80px;
-
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 40px;
+  line-height: 80px;
 }
+
 .navbar span {
-  color: aqua;
+  color: goldenrod;
 }
 
-.nav-menu{
+.nav-menu {
   display: flex;
   margin-right: 40px;
   list-style-type: none;
-  
 }
 
-.nav-menu-item{
-  font-size: 18px;
+.nav-menu-item {
+  font-size: medium;
   margin: 0 10px;
   line-height: 80px;
   text-transform: uppercase;
   width: max-content;
 }
 
-
-
-
 .nav-menu-link:hover {
+  color: goldenrod;
+  
+  text-shadow: 0px 0px 10px goldenrod;
   animation: flash;
   animation-duration: 2s;
 }
 
-.navtoggle{
+.navtoggle {
   color: white;
   background: none;
   border: none;
@@ -96,30 +93,25 @@ header {
   display: none;
 }
 
-@media(max-width: 768px){
-
-
-  body{
-    padding-top: 70px;
-  }
-
-  header{
+@media (max-width: 768px) {
+  header {
     height: 60px;
     backdrop-filter: blur(10px);
   }
 
-  .logo{
+  .logo {
     font-size: 25px;
     padding: 0 20px;
     line-height: 60px;
   }
 
-  .nav-menu{
+  .nav-menu {
     flex-direction: column;
     align-items: center;
     margin: 0;
     padding: 0;
     position: fixed;
+
     background-color: black;
     top: 50px;
     width: 100%;
@@ -129,25 +121,16 @@ header {
 
   .nav-menu-item {
     line-height: 70px;
-    
   }
 
-  .navtoggle{
+  .navtoggle {
     display: block;
   }
 
   .nav-menu_visible {
-    right:0;
-    
+    right: 0;
   }
-
 }
-
-
-
-
-
- 
 
 /* estilos de la seccion principal*/
 
@@ -156,6 +139,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 100px;
+  
 }
 
 #text {
@@ -172,26 +156,27 @@ header {
 }
 
 #button {
-  font-family: "IBM Plex Mono";
+  font-family: 'Source Sans 3', sans-serif;
   font-size: 1.25em;
   font-weight: 700;
   color: black;
   text-transform: uppercase;
   background-color: white;
-  margin: 20px;
+  margin: 20px 0;
   padding: 20px 20px;
   border-radius: 0.25rem;
-  border: solid 2px aqua;
-  box-shadow: 5px 5px aqua;
+  border: solid 2px goldenrod;
+  box-shadow: 5px 5px goldenrod;
   text-decoration: none;
 }
+
 #button:hover {
   cursor: pointer;
 }
 
 #button:active {
   transform: translate(00.125rem, 0.125rem);
-  box-shadow: 2px 2px aqua;
+  box-shadow: 2px 2px goldenrod;
 }
 
 #textbotones ul {
@@ -218,7 +203,7 @@ header {
   animation: backInRight;
   animation-duration: 2s;
 
-  box-shadow: 0px 0px 20px aqua;
+  box-shadow: 0px 0px 20px goldenrod;
 }
 
 #text {
@@ -229,7 +214,7 @@ header {
 #text h1 {
   color: white;
   font-size: 3.125em;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
   font-style: italic;
   animation: backInLeft;
   animation-duration: 2s;
@@ -237,13 +222,13 @@ header {
 }
 
 #text h1 span {
-  color: aqua;
+  color: goldenrod;
 }
 
 #text h3 {
-  color: aqua;
+  color: goldenrod;
   font-size: 25px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
   animation: backInLeft;
   animation-duration: 2s;
   margin: 0;
@@ -252,7 +237,7 @@ header {
 #text p {
   color: white;
   font-size: larger;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
   animation: backInLeft;
   animation-duration: 2s;
   margin: 0;
@@ -284,9 +269,7 @@ header {
   text-align: center;
 }
 
-
-
-#icono {
+.icon {
   text-align: center;
   color: white;
   font-size: 3.125em;
@@ -297,8 +280,6 @@ header {
   scroll-margin-top: 100px;
   padding-bottom: 250px;
 }
-
-
 
 .titulosblock h1 {
   font-size: 2.5em;
@@ -321,21 +302,13 @@ header {
   text-align: center;
 }
 
-
-
-
-
-
-#container{
+.containerblock {
   display: grid;
   grid-template-columns: auto auto;
   row-gap: 30px;
   column-gap: 30px;
   justify-items: center;
-  
 }
-
-
 
 .mainblock {
   font-size: 1.25em;
@@ -344,14 +317,14 @@ header {
   width: 400px;
   height: 200px;
   margin: 0;
-  
- 
 }
 
-
+.mainblock ul{
+  list-style-type: none;
+}
 
 .mainblock h2 {
-  color: aqua;
+  color: goldenrod;
 }
 
 .detailblock {
@@ -362,22 +335,16 @@ header {
   height: 200px;
 }
 
-.detailblock ul{
+.detailblock ul {
   margin: 0;
 }
 
-.mainblock ul{
+.mainblock ul {
   margin: 0;
 }
 
 footer {
-  background: linear-gradient(
-    360deg,
-    rgba(2, 0, 36, 1) 20%,
-    rgba(9, 9, 121, 1) 50%,
-    rgba(6, 78, 167, 1) 80%,
-    rgba(0, 132, 201, 1) 100%
-  );
+  background-color: black;
 }
 
 footer div {
@@ -393,8 +360,9 @@ footer h1 {
   font-size: xx-large;
   color: white;
 }
+
 #foottext span {
-  color: aqua;
+  color: goldenrod;
 }
 
 footer h2 {
@@ -408,6 +376,9 @@ footer h2 {
 }
 
 #footiconos ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
