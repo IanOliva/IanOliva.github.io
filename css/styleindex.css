@@ -87,7 +87,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #858585;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -100,12 +100,15 @@ header {
   left: 4px;
   bottom: 4px;
   background-color: white;
+  background: white url('https://i.ibb.co/FxzBYR9/night.png');
+  background-repeat: no-repeat;
+  background-position: center;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #ededed;
 }
 
 input:focus + .slider {
@@ -116,6 +119,9 @@ input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+  background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Rounded sliders */
@@ -139,8 +145,14 @@ input:checked + .slider:before {
   text-decoration: none;
 }
 
+.logo-container{
+  display:flex;
+  align-items: center;
+}
+
 .logo {
-  font-size: 30px;
+  display: block;
+  font-size: xx-large;
   font-weight: bold;
   padding: 0 40px;
   line-height: 80px;
@@ -162,11 +174,12 @@ input:checked + .slider:before {
   line-height: 80px;
   text-transform: uppercase;
   width: max-content;
+  
 }
+
 
 .nav-menu-link:hover {
   color: aqua;
-  
   text-shadow: 0px 0px 10px aqua;
   animation: flash;
   animation-duration: 2s;
@@ -183,44 +196,7 @@ input:checked + .slider:before {
   display: none;
 }
 
-@media (max-width: 768px) {
-  header {
-    height: 60px;
-    backdrop-filter: blur(10px);
-  }
 
-  .logo {
-    font-size: 25px;
-    padding: 0 20px;
-    line-height: 60px;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-
-    background-color: var(--background);
-    top: 50px;
-    width: 100%;
-    right: 100%;
-    transition: right 0.3s;
-  }
-
-  .nav-menu-item {
-    line-height: 70px;
-  }
-
-  .navtoggle {
-    display: block;
-  }
-
-  .nav-menu_visible {
-    right: 0;
-  }
-}
 
 /* estilos de la seccion principal*/
 
@@ -233,7 +209,7 @@ input:checked + .slider:before {
 }
 
 #text {
-  overflow: hidden;
+  
   width: 40%;
 }
 
@@ -305,7 +281,7 @@ input:checked + .slider:before {
   color: var(--color);
   font-size: 3.125em;
   font-family: 'Source Sans 3', sans-serif;
-  font-style: italic;
+  
   animation: backInLeft;
   animation-duration: 2s;
   margin: 0;
@@ -356,6 +332,7 @@ input:checked + .slider:before {
   margin: 0;
   padding: 0;
   list-style-position: inside;
+  list-style-type: none;
   text-align: center;
 }
 
@@ -446,7 +423,7 @@ input:checked + .slider:before {
   
 }
 /*inputs*/
-input[type=text],textarea{
+input[type=text],textarea,input[type=email]{
 
   width: 100%;
   padding: 12px;
@@ -458,7 +435,7 @@ input[type=text],textarea{
 
 }
 
-input[type=submit]{
+input[type=submit],input[type=reset]{
   background-color: var(--background);
   color: var(--color);
   padding: 12px 20px;
@@ -468,7 +445,7 @@ input[type=submit]{
   
 
 }
-input[type=submit]:hover {
+input[type=submit]:hover,input[type=reset]:hover {
   background-color: aqua;
 }
 
@@ -528,4 +505,68 @@ footer h2 {
   transform: scale(1.2, 1.2);
   transition-duration: 0.5s;
   text-shadow: 0px 0px 4px var(--color);
+}
+
+
+
+/* Estilos pantallas pequeñas */
+
+@media (max-width: 768px) {
+  header {
+    height: 60px;
+    backdrop-filter: blur(10px);
+  }
+
+  .logo {
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 60px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+
+    background-color: var(--background);
+    top: 50px;
+    width: 100%;
+    right: 100%;
+    transition: right 0.3s;
+  }
+
+  .nav-menu-item {
+    line-height: 70px;
+  }
+
+  .navtoggle {
+    display: block;
+  }
+
+  .nav-menu_visible {
+    right: 0;
+  }
+
+  #prasec{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #text{
+    width: 90%;
+    margin-bottom: 50px;
+  }
+
+  #textbotones{
+    flex-direction: column;
+  }
+
+  #smcontenedor{
+    display:flex;
+    flex-direction: column;
+
+  }
+
 }

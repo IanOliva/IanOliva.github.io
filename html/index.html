@@ -22,10 +22,14 @@
 <body>
   <header>
     <nav class="navbar">
-      <a class="logo nav-link" href="index.html">IAN <span>OLIVA</span><label class="switch" id="theme-picker">
+      <div class="logo-container">
+        <a class="logo nav-link" href="index.html">IAN <span>OLIVA</span></a>
+        <label class="switch" id="theme-picker">
           <input type="checkbox" id="checker">
           <span class="slider round"></span>
-        </label> </a>
+        </label>
+      </div>
+      
 
       <button class="navtoggle" aria-label="Abrir menu"><i class="fas fa-bars"></i></button>
       <ul class="nav-menu">
@@ -312,12 +316,13 @@
         <input type="text" id="nombre" name="name" placeholder="Ingrese nombre.." required aria-label="Nombre">
 
         <label for="email">Email</label>
-        <input type="text" id="mail" placeholder="Ingrese correo electronico.." required aria-label="correo electronico">
+        <input type="email" id="mail" placeholder="Ingrese correo electronico.." required aria-label="correo electronico">
 
         <label for="msg">Mensaje</label>
         <textarea name="msg" id="Mensaje" placeholder="Escriba su Mensaje.."></textarea>
           
         <input type="submit" value="submit">
+        <input type="reset" value="Restablecer">
           
         </form>
       
