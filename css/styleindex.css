@@ -17,6 +17,8 @@ html {
 body[theme=dark]{
   --background:black;
   --textcolor:white;
+  --hovers:rgb(0, 0, 88);
+  --inputs:rgb(39, 39, 39);
   background: var(--background);
   color:var(--textcolor);
 }
@@ -257,8 +259,12 @@ header {
 
 .smblock {
   font-size: 1.25em;
+  padding: 10px;
   color: var(--textcolor);
-  font-family: "Roboto", sans-serif;
+  border: 2px solid var(--textcolor);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px aqua;
+
 }
 
 .smblock h3 {
@@ -279,6 +285,7 @@ header {
   color: var(--textcolor);
   font-size:1.25em;
   text-shadow: 0px 0px 4px var(--textcolor);
+  
 }
 
 .seccion {
@@ -325,9 +332,10 @@ header {
 }
 
 .block{
+  
   width: 500px;
-  height: auto;
-  border: 2px solid aqua;
+  height: 150px;
+  border: 2px solid var(--textcolor);
   border-radius: 10px;
   box-shadow: 0px 0px 10px aqua;
   padding: 10px;
@@ -336,6 +344,11 @@ header {
 .block ul{
   list-style-type: none;
   padding: 0;
+}
+
+.block:hover{
+  background-color: var(--hovers);
+  transition: ease 1s;
 }
 
 
@@ -347,29 +360,47 @@ header {
   margin: 0 auto;
   border-radius: 10px;
   border: 1px solid var(--textcolor);
+  box-shadow: 0px 0px 10px aqua;
   background-color: var(--background);
   padding: 20px;
   width: 50%;
+  background-image: url(https://img.freepik.com/free-vector/realistic-background-futuristic-style_23-2149129125.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   
 }
+
+label{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: larger;
+  text-shadow: 3px 3px 5px var(--background);
+}
+
 /*inputs*/
 input[type=text],textarea,input[type=email]{
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.2); /* Color de fondo translúcido opcional */
 
   width: 100%;
   padding: 12px;
   border: 1px solid var(--textcolor);
   border-radius: 4px;
-  background-color: var(--background);
   resize: vertical;
   margin-top: 6px;
   margin-bottom: 16px;
   color: var(--textcolor);
-
+  
 }
+
+
 
 input[type=submit],input[type=reset]{
   background-color: var(--background);
+  border: 1px solid var(--textcolor);
   color: var(--textcolor);
+  box-shadow: 0px 0px 5px aqua;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -378,7 +409,8 @@ input[type=submit],input[type=reset]{
 
 }
 input[type=submit]:hover,input[type=reset]:hover {
-  background-color: aqua;
+  background-color: var(--hovers);
+  transition: ease 1s;
 }
 
 .contact-btns{
@@ -504,18 +536,16 @@ footer h2 {
     flex-direction: column;
 
   }
-  .containerblock{
-    grid-template-columns: auto;
-    text-align: center;
-    list-style-position: inside;
-    height: auto;
-    row-gap: 50px;
+  .info-columns{
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .mainblock{
-    
-    height: auto;
+  .info-blocks{
+    justify-content: center; 
+    align-items: center;
   }
+
   .detailblock{
     height: 100px;
   }
