@@ -15,7 +15,7 @@ html {
 /* estilos del body */
 
 body[theme=dark]{
-  --background:black;
+  --background:black; 
   --textcolor:white;
   --hovers:rgb(0, 0, 88);
   --inputs:rgb(39, 39, 39);
@@ -35,6 +35,8 @@ body {
   font-size: 16px;
   font-family: 'Source Sans 3', sans-serif;
   transition: 0.2s ease-in-out, color 0.2s ease-in-out;
+  
+  
 }
 
 /* estilos de barra de navegacion */
@@ -118,9 +120,8 @@ header {
 
 .nav-menu-link:hover {
   color: aqua;
-  text-shadow: 0px 0px 10px aqua;
-  animation: flash;
-  animation-duration: 2s;
+  text-shadow: 0px 0px 10px white;
+  transition: ease 1s;
 }
 
 .navtoggle {
@@ -143,7 +144,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 100px;
-  
+  background: ;
 }
 
 #text {
@@ -249,6 +250,8 @@ header {
 
 /* estilos de las secciones sob exp est cur */
 
+
+
 #smcontenedor {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
@@ -274,8 +277,7 @@ header {
 .smblock ul {
   margin: 0;
   padding: 0;
-  list-style-position: inside;
-  list-style-type: none;
+  list-style:none inside;
   text-align: center;
 }
 
@@ -361,7 +363,8 @@ header {
   border-radius: 10px;
   box-shadow: 0px 0px 10px aqua;
   width: 500px;
-  height: 200px;
+  height: 250px;
+  
 }
 .c-block ul{
   list-style:none inside
@@ -384,6 +387,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  
   
 }
 
@@ -437,59 +441,14 @@ input[type=submit]:hover,input[type=reset]:hover {
 /* Estilos del footer */
 
 footer {
-  background-color: var(--background);
+  
   color: var(--textcolor);
   border-bottom: 3px solid aqua;
   padding-bottom: 30px;
-}
-
-footer div {
-  font-size: 1.875em;
-}
-
-#foottext {
   text-align: center;
+  color: gray;
 }
 
-footer h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: xx-large;
-  color: var(--textcolor);
-}
-
-#foottext span {
-  color: aqua;
-}
-
-footer h2 {
-  color: var(--textcolor);
-  font-size: x-large;
-  font-family: "Montserrat", sans-serif;
-}
-
-#footiconos {
-  text-align: center;
-}
-
-#footiconos ul {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-#footiconos ul a i {
-  color: var(--textcolor);
-  font-size: xx-large;
-  padding: 20px 20px;
-}
-
-#footiconos ul a i:hover {
-  transform: scale(1.2, 1.2);
-  transition-duration: 0.5s;
-  text-shadow: 0px 0px 4px var(--textcolor);
-}
 
 
 
@@ -517,8 +476,10 @@ footer h2 {
     color: var(--textcolor);
     top: 50px;
     width: 100%;
-    right: 100%;
-    transition: right 0.3s;
+    left: 100%;
+    
+    transition: left 0.5s;
+    
   }
 
   .nav-menu-item {
@@ -530,7 +491,7 @@ footer h2 {
   }
 
   .nav-menu_visible {
-    right: 0;
+    left: 0;
   }
 
   #prasec{
@@ -550,11 +511,21 @@ footer h2 {
   #smcontenedor{
     display:flex;
     flex-direction: column;
+    
+    align-items: center;
 
   }
+
+  .smblock{
+    
+    width: 50%;
+    height: auto;
+  }
+
   .info-columns{
     flex-direction: column;
     justify-content: center;
+    row-gap: 30px;
   }
 
   .info-blocks{
@@ -562,8 +533,20 @@ footer h2 {
     align-items: center;
   }
 
-  .detailblock{
-    height: 100px;
+  .block{
+    width: 100%;
+    height: auto;
+  }
+  
+  .c-container{
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .c-block{
+    width: auto;
+    height: auto;
+
   }
 
   .seccion{
