@@ -205,6 +205,7 @@ header {
 /* estilos de las secciones sob exp est cur */
 
 #smcontenedor {
+  padding-top: 50px;
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
@@ -216,13 +217,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 30px;
+  column-gap: 50px;
   font-size: 1.25em;
   padding: 10px;
-
   border: 2px solid var(--textcolor);
   border-radius: 10px;
-
   width: 500px;
   height: 150px;
   box-shadow: 0px 0px 66px 25px rgba(0, 0, 0, 1) inset;
@@ -273,6 +272,14 @@ header {
 
 #soft {
   background-image: url(https://wallpaperaccess.com/full/4391662.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: -1px 3px 12px rgba(0, 0, 0, 1);
+}
+
+#database{
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230526/pngtree-the-data-center-corridor-with-many-servers-inside-image_2635368.jpg);
   background-size: cover;
   background-position: center;
   color: white;
@@ -361,14 +368,65 @@ header {
 
 /* estilos seccion contacto */
 
-.contact-container {
-  margin: 0 auto;
+
+#contacto{
+  padding-bottom: 100px;
+} 
+
+.tituloscontacto h1{
+  font-size: 2.5em;
+  font-family: "Montserrat", sans-serif;
+  color: var(--textcolor);
+  text-align: left;
+  padding: 0 40px;
+  text-decoration: underline overline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 10px;
+}
+
+.tituloscontacto h3{
+  font-size: 1.25em;
+  color: var(--textcolor);
+  font-family: "Montserrat", sans-serif;
+  text-align:left;
+  padding: 0 40px;
+}
+
+.contact-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.contact-info{
+  width: 400px;
+}
+
+.contact-info ul{
+  list-style: none inside;
+  
+}
+
+.contact-links {
+  display: flex;
+  column-gap: 20px;
+  
+}
+.contact-links a{
+  color: var(--textcolor);
+  font-size: xx-large;
+  text-decoration: none;
+}
+
+.contact-form {
+  
   border-radius: 10px;
   border: 1px solid var(--textcolor);
   box-shadow: 0px 0px 10px aqua;
   background-color: var(--background);
   padding: 20px;
-  width: 50%;
+  width: 400px; 
   background-image: url(https://img.freepik.com/free-vector/realistic-background-futuristic-style_23-2149129125.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -421,6 +479,8 @@ input[type="reset"]:hover {
 .contact-btns {
   text-align: center;
 }
+
+
 
 /* Estilos del footer */
 
