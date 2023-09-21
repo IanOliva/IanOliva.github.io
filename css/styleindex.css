@@ -601,4 +601,10 @@ footer {
   .seccion {
     padding-bottom: 100px;
   }
+
+  .contact-container{
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
 }
