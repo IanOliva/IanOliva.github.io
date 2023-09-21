@@ -358,12 +358,14 @@ header {
   border: 2px solid var(--textcolor);
   border-radius: 10px;
   box-shadow: 0px 0px 10px aqua;
-  width: 500px;
-  height: 250px;
+  width: auto;
+  height: 225px;
+  padding: 10px;
 }
 
 .c-block ul {
   list-style: none inside;
+  padding: 0;
 }
 
 /* estilos seccion contacto */
@@ -400,6 +402,9 @@ header {
 }
 
 .contact-info{
+  display:grid;
+  row-gap: 20px;
+
   width: 400px;
 }
 
@@ -434,10 +439,11 @@ header {
 }
 
 label {
+  color: white;
   text-transform: uppercase;
   font-weight: bold;
   font-size: larger;
-  text-shadow: 3px 3px 5px var(--background);
+  text-shadow: 3px 3px 5px black;
 }
 
 /*inputs*/
@@ -446,7 +452,7 @@ textarea,
 input[type="email"] {
   backdrop-filter: blur(5px);
   background-color: rgba(255, 255, 255, 0.2);
-  /* Color de fondo translúcido opcional */
+  /* Color de fondo translúcido */
 
   width: 100%;
   padding: 12px;
