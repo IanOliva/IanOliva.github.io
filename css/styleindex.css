@@ -45,6 +45,7 @@ header {
   width: 100%;
   top: 0;
   border-top: 3px solid aqua;
+  
 }
 
 .navbar {
@@ -355,12 +356,17 @@ header {
 }
 
 .c-block {
+  color: black;
   border: 2px solid var(--textcolor);
   border-radius: 10px;
   box-shadow: 0px 0px 10px aqua;
   width: auto;
   height: 225px;
   padding: 10px;
+  background-repeat:no-repeat;
+  background-position:bottom;
+  background-size:contain;
+  background-color: white;
 }
 
 .c-block ul {
@@ -368,6 +374,23 @@ header {
   padding: 0;
 }
 
+#rep{
+  background-image: url(https://academia.comunidadreparando.com/wp-content/uploads/2022/07/cropped-logo-black.webp);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+ background-color: white;
+}
+
+#sup{
+  background-image: url(https://junior.org.ar/wp-content/uploads/2022/08/Junior-Achievement-Argentina_Positivo-1.png);
+ 
+}
+
+#lyf{
+background-image: url(https://centrodedesarrollosocialluzyfuerza.com.ar/wp-content/uploads/2023/02/15-2.jpg);
+
+}
 /* estilos seccion contacto */
 
 
@@ -491,19 +514,29 @@ input[type="reset"]:hover {
 /* Estilos del footer */
 
 footer {
-  color: var(--textcolor);
+ font-size: larger;
   border-bottom: 3px solid aqua;
   padding-bottom: 30px;
   text-align: center;
   color: gray;
 }
 
+
+
 .icon {
   text-align: center;
-  color: var(--textcolor);
+  color: gray;
   font-size: 1.25em;
-  text-shadow: 0px 0px 4px var(--textcolor);
 }
+
+.icon:hover{
+  color: var(--textcolor);
+  text-shadow: 0px 0px 2px white;
+  transform: scale(1.2,1.2);
+  transition:ease-out 0.5s;
+}
+
+
 
 /* Estilos pantallas pequeñas */
 
