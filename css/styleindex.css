@@ -287,6 +287,26 @@ header {
   text-shadow: -1px 3px 12px rgba(0, 0, 0, 1);
 }
 
+/* estilos seccion proyectos  */
+
+#procontainer{
+  display: flex;
+  justify-content: space-around;
+}
+  
+
+
+
+.card{
+  border: 2px solid var(--textcolor);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.card-content{
+  text-align: center;
+}
+
 .seccion {
   scroll-margin-top: 100px;
   padding-bottom: 250px;
@@ -360,8 +380,8 @@ header {
   border: 2px solid var(--textcolor);
   border-radius: 10px;
   box-shadow: 0px 0px 10px aqua;
-  width: auto;
-  height: 225px;
+  width: 400px;
+  height: 400px;
   padding: 10px;
   background-repeat:no-repeat;
   background-position:bottom;
@@ -374,23 +394,17 @@ header {
   padding: 0;
 }
 
-#rep{
-  background-image: url(https://academia.comunidadreparando.com/wp-content/uploads/2022/07/cropped-logo-black.webp);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
- background-color: white;
+
+.c-img img{
+  object-fit: cover;
+  width:100%;
+  height:100%;
+  
 }
 
-#sup{
-  background-image: url(https://junior.org.ar/wp-content/uploads/2022/08/Junior-Achievement-Argentina_Positivo-1.png);
- 
-}
 
-#lyf{
-background-image: url(https://centrodedesarrollosocialluzyfuerza.com.ar/wp-content/uploads/2023/02/15-2.jpg);
 
-}
+
 /* estilos seccion contacto */
 
 
