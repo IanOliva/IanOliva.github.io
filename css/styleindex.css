@@ -14,18 +14,20 @@ html {
 /* estilos del body */
 
 body[theme="dark"] {
-  --background: black;
+  --background: #0a0a0a;
   --textcolor: white;
-  --hovers: rgb(0, 0, 88);
-  --inputs: rgb(39, 39, 39);
+  --details:#6fff00;
+  /* --hovers: rgb(0, 0, 88);
+  --inputs: rgb(39, 39, 39); */
   background: var(--background);
   color: var(--textcolor);
 }
 
 body[theme="light"] {
-  --background: rgb(255, 255, 255);
+  --background: rgb(245, 245, 245);
   --textcolor: black;
-  --hovers: rgb(0, 67, 88);
+  --details:#1995AD;
+  
   background: var(--background);
   color: var(--textcolor);
 }
@@ -44,7 +46,8 @@ header {
   backdrop-filter: blur(5px);
   width: 100%;
   top: 0;
-  border-top: 3px solid aqua;
+  border-top: 3px solid var(--details);
+  
   
 }
 
@@ -98,7 +101,7 @@ header {
 }
 
 .navbar span {
-  color: aqua;
+  color: var(--details);
 }
 
 .nav-menu {
@@ -116,7 +119,7 @@ header {
 }
 
 .nav-menu-link:hover {
-  color: aqua;
+  color: var(--details);
 
   /* transition: ease 1s; */
 }
@@ -160,11 +163,11 @@ header {
 }
 
 #main h1 span {
-  color: aqua;
+  color: var(--details);
 }
 
 #main h3 {
-  color: aqua;
+  color: var(--details);
   font-size: 40px;
   font-family: "Source Sans 3", sans-serif;
   margin: 0;
@@ -187,8 +190,8 @@ header {
   width: 175px;
   margin: 0 auto;
   border-radius: 0.25rem;
-  border: solid 2px aqua;
-  box-shadow: 5px 5px aqua;
+  border: solid 2px var(--details);
+  box-shadow: 5px 5px var(--details);
   text-decoration: none;
   animation:fadeInUp;
   animation-duration: 2s;
@@ -200,7 +203,7 @@ header {
 
 #contact-btn:active {
   transform: translate(00.125rem, 0.125rem);
-  box-shadow: 2px 2px aqua;
+  box-shadow: 2px 2px var(--details);
 }
 
 /* estilos de las secciones sob exp est cur */
@@ -223,7 +226,7 @@ header {
   column-gap: 50px;
   font-size: 1.25em;
   padding: 10px;
-  border: 2px solid var(--textcolor);
+  border: 2px solid var(--details);
   border-radius: 10px;
   width: 500px;
   height: 150px;
@@ -294,13 +297,12 @@ header {
 #procontainer{
   display: flex;
   justify-content: space-around;
+  margin-top: 30px;
 }
   
 
-
-
 .card{
-  border: 2px solid var(--textcolor);
+  border: 2px solid var(--details);
   border-radius: 5px;
   padding: 10px;
 }
@@ -334,7 +336,7 @@ header {
 
 .titulosblock h3 {
   font-size: 1.25em;
-  color: var(--textcolor);
+  color: var(--details);
   font-family: "Montserrat", sans-serif;
   text-align: center;
 }
@@ -356,7 +358,7 @@ header {
   height: 150px;
   border: 2px solid var(--textcolor);
   border-radius: 10px;
-  box-shadow: 0px 0px 10px aqua;
+  box-shadow: 0px 0px 10px var(--details);
   padding: 10px;
 }
 
@@ -381,13 +383,10 @@ header {
   color: black;
   border: 2px solid var(--textcolor);
   border-radius: 10px;
-  box-shadow: 0px 0px 10px aqua;
+  box-shadow: 0px 0px 10px var(--details);
   width: 400px;
-  height: 400px;
+  height: 300px;
   padding: 10px;
-  background-repeat:no-repeat;
-  background-position:bottom;
-  background-size:contain;
   background-color: white;
 }
 
@@ -467,30 +466,26 @@ header {
   
   border-radius: 10px;
   border: 1px solid var(--textcolor);
-  box-shadow: 0px 0px 10px aqua;
+  box-shadow: 0px 0px 10px var(--details);
   background-color: var(--background);
   padding: 20px;
   width: 400px; 
-  background-image: url(https://img.freepik.com/free-vector/realistic-background-futuristic-style_23-2149129125.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+ 
 }
 
 label {
-  color: white;
+  color: var(--textcolor);
   text-transform: uppercase;
   font-weight: bold;
   font-size: larger;
-  text-shadow: 3px 3px 5px black;
+  
 }
 
 /*inputs*/
 input[type="text"],
 textarea,
 input[type="email"] {
-  backdrop-filter: blur(5px);
-  background-color: rgba(255, 255, 255, 0.2);
+ 
   /* Color de fondo translúcido */
 
   width: 100%;
@@ -500,7 +495,7 @@ input[type="email"] {
   resize: vertical;
   margin-top: 6px;
   margin-bottom: 16px;
-  color: var(--textcolor);
+  color:black;
 }
 
 input[type="submit"],
@@ -508,7 +503,7 @@ input[type="reset"] {
   background-color: var(--background);
   border: 1px solid var(--textcolor);
   color: var(--textcolor);
-  box-shadow: 0px 0px 5px aqua;
+  box-shadow: 0px 0px 5px var(--details);
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -531,7 +526,7 @@ input[type="reset"]:hover {
 
 footer {
  font-size: larger;
-  border-bottom: 3px solid aqua;
+  border-bottom: 3px solid var(--details);
   padding-bottom: 30px;
   text-align: center;
   color: gray;
@@ -541,7 +536,7 @@ footer {
 
 .icon {
   text-align: center;
-  color: gray;
+  color: var(--textcolor);
   font-size: 1.25em;
 }
 
@@ -550,6 +545,7 @@ footer {
   text-shadow: 0px 0px 2px white;
   transform: scale(1.2,1.2);
   transition:ease-out 0.5s;
+
 }
 
 
