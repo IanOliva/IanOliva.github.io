@@ -12,30 +12,35 @@ html {
 }
 
 /* estilos del body */
-
-body[theme="dark"] {
+body.dark-theme{
   --background: #0a0a0a;
   --textcolor: white;
   --details:#6fff00;
-  /* --hovers: rgb(0, 0, 88);
-  --inputs: rgb(39, 39, 39); */
+  --hovers: rgb(0, 0, 88);
+  --inputs: rgb(39, 39, 39);
   background: var(--background);
   color: var(--textcolor);
 }
 
-body[theme="light"] {
+
+
+/* body[theme="light"] {
   --background: rgb(245, 245, 245);
   --textcolor: black;
   --details:#1995AD;
-  
   background: var(--background);
   color: var(--textcolor);
-}
+} */
 
 body {
   font-size: 16px;
   font-family: "Source Sans 3", sans-serif;
   transition: 0.2s ease-in-out, color 0.2s ease-in-out;
+  --background: rgb(245, 245, 245);
+  --textcolor: black;
+  --details:#1995AD;
+  background: var(--background);
+  color: var(--textcolor);
 }
 
 /* estilos de barra de navegacion */
@@ -97,7 +102,7 @@ header {
 
 #theme-toggle:checked + label {
   background-color: transparent;
-  box-shadow: inset -6px -4px 1px 1px #ffffff;
+  box-shadow: inset -6px -4px 1px 1px var(--textcolor);
 }
 
 .navbar span {

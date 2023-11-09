@@ -15,9 +15,23 @@ navtoggle.addEventListener("click", () => {
 
 // tema claro/oscuro
 
-document.getElementById("theme-toggle").addEventListener("click", (e) => {
-  const checked = e.target.checked;
-  document.body.setAttribute("theme", checked ? "dark" : "light");
+function toggleTheme() {
+  const body = document.querySelector('body');
+  body.classList.toggle('dark-theme');
+}
+if (localStorage.getItem('theme') === 'dark') {
+  toggleTheme();
+}
+
+const themeToggle = document.getElementById('theme-toggle');
+themeToggle.addEventListener('click', function () {
+    toggleTheme();
+    // Guardar la elección del usuario en el almacenamiento local
+    if (document.body.classList.contains('dark-theme')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
 });
 
 // animaciones de scroll (seccion sobre mi)
