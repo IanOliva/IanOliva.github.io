@@ -119,3 +119,11 @@ window.addEventListener("scroll", () => {
     element.style.animation = "fadeInRight 2s";
   }
 });
+
+
+function enviarCorreo() {
+  var asunto = document.getElementById("asunto").value;
+  var mensaje = document.getElementById("mensaje").value;
+  var correoLink = document.getElementById("correoLink");
+  correoLink.href = "mailto:ianoliva2000@gmail.com?subject=" + encodeURIComponent(asunto) + "&body=" + encodeURIComponent(mensaje);
+}

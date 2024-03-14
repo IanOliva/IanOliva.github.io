@@ -506,7 +506,7 @@ input[type="email"] {
   color:black;
 }
 
-button[type="submit"],
+#correoLink,
 button[type="reset"] {
   background-color: var(--background);
   border: 1px solid var(--textcolor);
@@ -516,9 +516,10 @@ button[type="reset"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  text-decoration: none;
 }
 
-button[type="submit"]:hover,
+#correoLink:hover,
 button[type="reset"]:hover {
   background-color: var(--hovers);
   transition: ease 1s;
