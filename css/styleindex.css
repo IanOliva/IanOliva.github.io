@@ -23,15 +23,6 @@ body.dark-theme{
 }
 
 
-
-/* body[theme="light"] {
-  --background: rgb(245, 245, 245);
-  --textcolor: black;
-  --details:#1995AD;
-  background: var(--background);
-  color: var(--textcolor);
-} */
-
 body {
   font-size: 16px;
   font-family: "Source Sans 3", sans-serif;
@@ -308,8 +299,16 @@ header {
 
 .card{
   border: 2px solid var(--details);
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px;
+  
+}
+
+.card-img{
+ width: 300px;
+ height: 150px;
+  border-radius: 5px;
+  
 }
 
 .card-content{
@@ -423,7 +422,7 @@ header {
   font-family: "Montserrat", sans-serif;
   color: var(--textcolor);
   text-align: left;
-  padding: 0 40px;
+  padding:20px 0;
   text-decoration: underline overline;
   text-decoration-thickness: 1px;
   text-underline-offset: 10px;
@@ -431,10 +430,10 @@ header {
 
 .tituloscontacto h3{
   font-size: 1.25em;
-  color: var(--textcolor);
+  color: var(--details);
   font-family: "Montserrat", sans-serif;
   text-align:left;
-  padding: 0 40px;
+  padding: 40 0px;
 }
 
 .contact-container{
@@ -447,9 +446,13 @@ header {
 .contact-info{
   display:grid;
   row-gap: 20px;
-
   width: 400px;
 }
+
+.contact-info *{
+  padding: 0;
+}
+
 
 .contact-info ul{
   list-style: none inside;
@@ -503,8 +506,8 @@ input[type="email"] {
   color:black;
 }
 
-input[type="submit"],
-input[type="reset"] {
+button[type="submit"],
+button[type="reset"] {
   background-color: var(--background);
   border: 1px solid var(--textcolor);
   color: var(--textcolor);
@@ -515,14 +518,16 @@ input[type="reset"] {
   cursor: pointer;
 }
 
-input[type="submit"]:hover,
-input[type="reset"]:hover {
+button[type="submit"]:hover,
+button[type="reset"]:hover {
   background-color: var(--hovers);
   transition: ease 1s;
 }
 
 .contact-btns {
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 
