@@ -663,4 +663,13 @@ footer {
     row-gap: 30px;
   }
 
+  #procontainer{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+  .card{
+    width: 50%;
+  
+  }
 }
