@@ -2,15 +2,17 @@
 
 const navtoggle = document.querySelector(".navtoggle");
 const navmenu = document.querySelector(".nav-menu");
-
+ 
 navtoggle.addEventListener("click", () => {
-  navmenu.classList.toggle("nav-menu_visible");
-
-  if (navMenu.classList.contains("nav-menu_visible")) {
-    navToggle.setAttribute("aria-label", "Cerrar menú");
+  
+  if (navmenu.style.display === "flex") {
+      navmenu.style.display = "none";
+      navtoggle.setAttribute("aria-label", "Abrir menú");
   } else {
-    navToggle.setAttribute("aria-label", "Abrir menú");
+      navmenu.style.display = "flex";
+      navtoggle.setAttribute("aria-label", "Cerrar menú");
   }
+  
 });
 
 // tema claro/oscuro

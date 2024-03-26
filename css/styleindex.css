@@ -32,6 +32,7 @@ body {
   --details:#1995AD;
   background: var(--background);
   color: var(--textcolor);
+  
 }
 
 /* estilos de barra de navegacion */
@@ -104,6 +105,7 @@ header {
   display: flex;
   margin-right: 40px;
   list-style-type: none;
+  
 }
 
 .nav-menu-item {
@@ -134,15 +136,17 @@ header {
 /* estilos de la seccion principal*/
 
 #prasec {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  
+  position: relative;
   margin-top: 100px;
   margin-bottom: 100px;
   
 }
 
+
+
 #main {
+  margin: 0 auto;
   display: grid;
   row-gap: 1.25em;
   width: 50%;
@@ -153,7 +157,7 @@ header {
 
 #main h1 {
   color: var(--textcolor);
-  font-size: 65px;
+  font-size: 75px;
   font-family: "Source Sans 3", sans-serif;
   margin: 0;
 }
@@ -202,6 +206,31 @@ header {
   box-shadow: 2px 2px var(--details);
 }
 
+.slider-container {
+  margin: 50px  auto;
+  max-width: 30%;
+  overflow: hidden;
+}
+
+.slider {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.slider-item img{
+  width: 30px;
+  height: 30px;
+}
+
+
 /* estilos de las secciones sob exp est cur */
 
 #smcontenedor {
@@ -215,7 +244,7 @@ header {
 
 
 
-.smblock {
+.smblock > div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,7 +255,13 @@ header {
   border-radius: 10px;
   width: 500px;
   height: 150px;
-  box-shadow: 0px 0px 66px 25px rgba(0, 0, 0, 1) inset;
+  
+  /* box-shadow: 0px 0px 66px 25px rgba(0, 0, 0, 1) inset; */
+}
+
+.smblock-bg{
+  backdrop-filter: blur(1px); 
+  
 }
 
 .smblock ul {
@@ -240,53 +275,37 @@ header {
 }
 
 
-#prog {
-  background-image: url(https://fondosmil.com/fondo/52894.jpg);
+#prog, #web, #desing, #lang, #soft, #database {
   background-size: cover;
   background-position: center;
   color: white;
-  text-shadow: -2px 2px 8px rgba(0, 0, 0, 1);
+  text-shadow: -1px 3px 12px rgba(0, 0, 0, 1);
+}
+
+#prog {
+  background-image: url(https://fondosmil.com/fondo/52894.jpg);
 }
 
 #web {
   background-image: url(https://i.revistapym.com.co/cms/2022/09/12204054/5-1.jpg?w=412&d=2.625);
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-shadow: -1px 3px 12px rgba(0, 0, 0, 1);
 }
 
 #desing {
   background-image: url(https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGlzZSVDMyVCMW8lMjBnciVDMyVBMWZpY298ZW58MHx8MHx8fDA%3D&w=1000&q=80);
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-shadow: -1px 3px 12px rgba(0, 0, 0, 1);
 }
 
 #lang {
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5xFP_-mqsfrkuE5JxySq-O36dClOBdMyZ3Gq3yocZkVmwrPusYZ6ULhWQF6ladCTmuPg&usqp=CAU);
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-shadow: -1px 3px 12px rgb(0, 0, 0, 1);
 }
 
 #soft {
   background-image: url(https://wallpaperaccess.com/full/4391662.jpg);
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-shadow: -1px 3px 12px rgba(0, 0, 0, 1);
 }
 
 #database{
   background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230526/pngtree-the-data-center-corridor-with-many-servers-inside-image_2635368.jpg);
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-shadow: -1px 3px 12px rgba(0, 0, 0, 1);
 }
+
 
 /* estilos seccion proyectos  */
 
@@ -307,7 +326,7 @@ header {
 .card-img{
  width: 300px;
  height: 150px;
-  border-radius: 5px;
+ border-radius: 5px;
   
 }
 
@@ -567,6 +586,7 @@ footer {
   header {
     height: 60px;
     backdrop-filter: blur(10px);
+    
   }
 
   .logo {
@@ -575,18 +595,27 @@ footer {
     line-height: 60px;
   }
 
+  .navbar{
+    max-width: 100%;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+  }
+
+  .logo-container{
+    justify-content: space-evenly;
+    
+  }
+
   .nav-menu {
     flex-direction: column;
     align-items: center;
     margin: 0;
     padding: 0;
-    position: fixed;
     background-color: var(--background);
     color: var(--textcolor);
-    top: 50px;
-    width: 100%;
-    left: 100%;
-
+    /* top:50px;
+    position: fixed; */
     transition: left 0.5s;
   }
 
@@ -596,24 +625,29 @@ footer {
 
   .navtoggle {
     display: block;
+    
   }
 
-  .nav-menu_visible {
-    left: 0;
-  }
 
   #prasec {
     flex-direction: column;
     text-align: center;
+    
   }
 
-  #text {
+  #main {
     width: 90%;
-    margin-bottom: 50px;
   }
 
-  #textbotones {
-    flex-direction: column;
+  #main h1{
+    font-size: 35px;
+  }
+
+  #main h3{
+    font-size: 20px;
+  }
+  #main p{
+    font-size: 15px;
   }
 
   #smcontenedor {
