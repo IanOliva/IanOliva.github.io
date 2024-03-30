@@ -17,24 +17,22 @@ navtoggle.addEventListener("click", () => {
 
 // tema claro/oscuro
 
+
+const body = document.querySelector('body');
+const toggleButton = document.querySelector('#toggle-button');
+const moonIcon = document.querySelector('#moon-icon');
+const sunIcon = document.querySelector('#sun-icon');
+
+
 function toggleTheme() {
-  const body = document.querySelector('body');
   body.classList.toggle('dark-theme');
-}
-if (localStorage.getItem('theme') === 'dark') {
-  toggleTheme();
+  toggleButton.classList.toggle('active');
+  moonIcon.classList.toggle('hidden');
+  sunIcon.classList.toggle('hidden');
 }
 
-const themeToggle = document.getElementById('theme-toggle');
-themeToggle.addEventListener('click', function () {
-    toggleTheme();
-    // Guardar la elección del usuario en el almacenamiento local
-    if (document.body.classList.contains('dark-theme')) {
-        localStorage.setItem('theme', 'dark');
-    } else {
-        localStorage.setItem('theme', 'light');
-    }
-});
+
+toggleButton.addEventListener('click', toggleTheme);
 
 // animaciones de scroll (seccion sobre mi)
 
@@ -129,3 +127,5 @@ function enviarCorreo() {
   var correoLink = document.getElementById("correoLink");
   correoLink.href = "mailto:ianoliva2000@gmail.com?subject=" + encodeURIComponent(asunto) + "&body=" + encodeURIComponent(mensaje);
 }
+
+

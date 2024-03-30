@@ -1,216 +1,230 @@
 <!DOCTYPE html>
 
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ian Oliva Portfolio</title>
-    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
-    <!-- css -->
-    <link rel="stylesheet" href="/css/styleindex.css" />
-    <!-- fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Bebas+Neue&family=Source+Sans+3&display=swap"
-      rel="stylesheet"
-    />
-    <!-- animaciones -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <!-- iconos -->
-    <script
-      src="https://kit.fontawesome.com/84f1588987.js"
-      crossorigin="anonymous"
-    ></script>
 
-    <!-- Javascript -->
-    <script defer src="/Javascript/index.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ian Oliva Portfolio</title>
+  <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+  <!-- css -->
+  <link rel="stylesheet" href="/css/styleindex.css" />
+  <!-- fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Bebas+Neue&family=Source+Sans+3&display=swap"
+    rel="stylesheet" />
+  <!-- animaciones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- iconos -->
+  <script src="https://kit.fontawesome.com/84f1588987.js" crossorigin="anonymous"></script>
 
-  <body class="dark-theme">
-    <header>
-      <nav class="navbar">
-        <div class="logo-container">
-          <a class="logo nav-link" href="index.html">IAN <span>OLIVA</span></a>
-          <input type="checkbox" id="theme-toggle" />
-          <label for="theme-toggle" title="cambiar tema"></label>
-          <button class="navtoggle" aria-label="Abrir menu">
+  <!-- Javascript -->
+  <script defer src="/Javascript/index.js"></script>
+</head>
+
+<body class="dark-theme">
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <a class="logo nav-link" href="index.html">IAN <span>OLIVA</span></a>
+       
+        
+        <button class="navtoggle" aria-label="Abrir menu">
           <i class="fas fa-bars"></i>
         </button>
-        </div>
-
-        
+      </div>
+      <div class="nav-menu-container">
         <ul class="nav-menu">
-          <li class="nav-menu-item">
-            <a class="nav-menu-link nav-link" href="#sobremi"> Sobre mi</a>
-          </li>
-          <li class="nav-menu-item">
-            <a class="nav-menu-link nav-link" href="#proyectos">Proyectos</a>
-          </li>
-          <!-- <li class="nav-menu-item">
+        <li class="nav-menu-item">
+          <a class="nav-menu-link nav-link" href="#sobremi"> Sobre mi</a>
+        </li>
+        <li class="nav-menu-item">
+          <a class="nav-menu-link nav-link" href="#proyectos">Proyectos</a>
+        </li>
+        <!-- <li class="nav-menu-item">
           <a class="nav-menu-link nav-link" href="#experiencia&cursos">Experiencia</a>
         </li> -->
-          <!-- <li class="nav-menu-item">
+        <!-- <li class="nav-menu-item">
           <a class="nav-menu-link nav-link" href="#cursos">Cursos</a>
         </li> -->
-          <li class="nav-menu-item">
-            <a class="nav-menu-link nav-link" href="#contacto">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+        <li class="nav-menu-item">
+          <a class="nav-menu-link nav-link" href="#contacto">Contacto</a>
+        </li>
+      </ul>
 
-    <section class="seccion" id="prasec">
-          
-      <div id="main">
-        <h1>Hola soy <span>Ian Oliva</span></h1>
-        <h3>Developer Trainee</h3>
-        <p>
-          En busca de poder insertarme en el rubro de la tecnología, capacitado
-          en soft skills, estoy dispuesto a escuchar ofertas laborales
-          aprendiendo y aceptando nuevos desafios.
-        </p>
-        <a id="contact-btn" href="#contacto">Contactame</a>
-      </div>
-      <div class="slider-container">
-        <ul class="slider">
-          <li class="slider-item"><img src="assets/icons/html-5.png" alt="html logo"></li>
-          <li class="slider-item"><img src="assets/icons/css-3.png" alt="css logo"></li>
-          <li class="slider-item"><img src="assets/icons/javascript.png" alt="js logo"></li>
-          <li class="slider-item"><img src="assets/icons/bootstrap.png" alt="bootstrap logo"></li>
-          <li class="slider-item"><img src="assets/icons/figma.png" alt="figma logo"></li>
-          <li class="slider-item"><img src="assets/icons/photoshop.png" alt="photoshop logo"></li>
-          <li class="slider-item"><img src="assets/icons/php.png" alt="php logo"></li>
-          <li class="slider-item"><img src="assets/icons/mysql.png" alt="mysql logo"></li>
-        </ul>
+      <button id="toggle-button" class="theme-toggle">
+        <img src="assets/icons/light-theme.png" id="sun-icon" alt="sun icon">
+        <img src="assets/icons/dark-theme.png" id="moon-icon" alt="moon icon" class="hidden">
+      </button>
       </div>
       
-    </section>
+    </nav>
+  </header>
 
-    <section class="seccion" id="sobremi">
-      <div class="titulosblock">
-        <h3>About me</h3>
-        <h1>Sobre Mi</h1>
+  <section class="seccion" id="prasec">
+    <div id="main">
+      <h1>Hola soy <span>Ian Oliva</span></h1>
+      <h3>Developer Trainee</h3>
+      <p>
+        En busca de poder insertarme en el rubro de la tecnología, capacitado
+        en soft skills, estoy dispuesto a escuchar ofertas laborales
+        aprendiendo y aceptando nuevos desafios.
+      </p>
+      <div class="main-btns">
+        <a id="contact-btn" href="#contacto">Contactame</a>
+        <ul class="contact-links">
+          <li>
+            <a href="https://www.linkedin.com/in/ian-oliva-it/" target="_blank" aria-label="linkedin"><i
+                class="fa-brands fa-linkedin icon"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/IanOliva" target="_blank" aria-label="github"><i
+                class="fa-brands fa-github icon"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="bg-shape"></div>
+    <!-- <div class="slider-container">
+      <ul class="slider">
+        <li class="slider-item">
+          <img src="assets/icons/html-5.png" alt="html logo" />
+        </li>
+        <li class="slider-item">
+          <img src="assets/icons/css-3.png" alt="css logo" />
+        </li>
+        <li class="slider-item">
+          <img src="assets/icons/javascript.png" alt="js logo" />
+        </li>
+        <li class="slider-item">
+          <img src="assets/icons/bootstrap.png" alt="bootstrap logo" />
+        </li>
+        <li class="slider-item">
+          <img src="assets/icons/figma.png" alt="figma logo" />
+        </li>
+        <li class="slider-item">
+          <img src="assets/icons/photoshop.png" alt="photoshop logo" />
+        </li>
+        <li class="slider-item">
+          <img src="assets/icons/php.png" alt="php logo" />
+        </li>
+        <li class="slider-item">
+          <img src="assets/icons/mysql.png" alt="mysql logo" />
+        </li>
+      </ul>
+    </div> -->
+  </section>
+
+  <section class="seccion" id="sobremi">
+    <div class="titulosblock">
+      <h3>About me</h3>
+      <h1>Sobre Mi</h1>
+    </div>
+
+    <div class="scroll-anim-sm" id="smcontenedor">
+      <div class="smblock" id="prog">
+        <div class="smblock-bg">
+          <h3><i class="fa-solid fa-code"></i> Programacion</h3>
+          <ul>
+            <li>C</li>
+            <li>C#</li>
+            <li>Javascript</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="scroll-anim-sm" id="smcontenedor">
-        <div class="smblock" id="prog">
-          <div class="smblock-bg">
-            <h3><i class="fa-solid fa-code"></i> Programacion</h3>
-            <ul>
-              <li>C</li>
-              <li>C#</li>
-              <li>Javascript</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="smblock" id="lang">
-          <div class="smblock-bg">
-            <h3><i class="fa-regular fa-comments"></i> Idioma</h3>
-            <ul>
-              <li>Español Nativo</li>
-              <li>Ingles Intermedio</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="smblock" id="web">
-          <div class="smblock-bg">
-            <h3><i class="fa-solid fa-globe"></i> Desarrollo Web</h3>
-            <ul>
-              <li>HTML & CSS</li>
-              <li>PHP</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="smblock" id="desing">
-          <div class="smblock-bg">
-            <h3><i class="fa-regular fa-pen-to-square"></i> Diseño Gráfico</h3>
-            <ul>
-              <li>Photoshop</li>
-              <li>Illustrator</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="smblock" id="soft">
-          <div class="smblock-bg">
-            <h3><i class="fa-regular fa-folder-open"></i> Software</h3>
-            <ul>
-              <li>office</li>
-              <li>windows & linux</li>
-              <li>windows Server</li>
-              <li>Team viewer</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="smblock" id="database">
-          <div class="smblock-bg">
-            <h3><i class="fa-solid fa-database"></i> Base de datos</h3>
-            <ul>
-              <li>MySql</li>
-            </ul>
-          </div>
+      <div class="smblock" id="lang">
+        <div class="smblock-bg">
+          <h3><i class="fa-regular fa-comments"></i> Idioma</h3>
+          <ul>
+            <li>Español Nativo</li>
+            <li>Ingles Intermedio</li>
+          </ul>
         </div>
       </div>
-    </section>
 
-    <section class="seccion" id="proyectos">
-      <div class="titulosblock">
-        <h3>Proyects</h3>
-        <h1>Proyectos</h1>
-      </div>
-
-      <div class="scroll-anim-pr" id="procontainer">
-        <div class="card">
-          <img
-            class="card-img"
-            src="assets/img/cap proyecto card.png"
-            alt="proyect card"
-          />
-
-          <div class="card-content">
-            <h3>Business Card</h3>
-            <p>Proyecto de tarjeta personal</p>
-            <p>HTML, CSS</p>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            class="card-img"
-            src="assets/img/cap proyecto 2.png"
-            alt="proyect "
-          />
-
-          <div class="card-content">
-            <h3>Ecommerce</h3>
-            <p>Proyecto de Ecommerce</p>
-            <p>PHP, Bootstrap, Mysql</p>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            class="card-img"
-            src="assets/img/cap proyecto role game.png"
-            alt=""
-          />
-
-          <div class="card-content">
-            <h3>Role Game</h3>
-            <p>Proyecto de Role Game</p>
-            <p>HTML, CSS, JAVASCRIPT</p>
-          </div>
+      <div class="smblock" id="web">
+        <div class="smblock-bg">
+          <h3><i class="fa-solid fa-globe"></i> Desarrollo Web</h3>
+          <ul>
+            <li>HTML & CSS</li>
+            <li>PHP</li>
+          </ul>
         </div>
       </div>
-    </section>
 
-    <!-- <section class="seccion" id="experiencia&cursos">
+      <div class="smblock" id="desing">
+        <div class="smblock-bg">
+          <h3><i class="fa-regular fa-pen-to-square"></i> Diseño Gráfico</h3>
+          <ul>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="smblock" id="soft">
+        <div class="smblock-bg">
+          <h3><i class="fa-regular fa-folder-open"></i> Software</h3>
+          <ul>
+            <li>office</li>
+            <li>windows & linux</li>
+            <li>windows Server</li>
+            <li>Team viewer</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="smblock" id="database">
+        <div class="smblock-bg">
+          <h3><i class="fa-solid fa-database"></i> Base de datos</h3>
+          <ul>
+            <li>MySql</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" id="proyectos">
+    <div class="titulosblock">
+      <h3>Proyects</h3>
+      <h1>Proyectos</h1>
+    </div>
+
+    <div class="scroll-anim-pr" id="procontainer">
+      <div class="card">
+        <img class="card-img" src="assets/img/cap proyecto card.png" alt="proyect card" />
+
+        <div class="card-content">
+          <h3>Business Card</h3>
+          <p>Proyecto de tarjeta personal</p>
+          <p>HTML, CSS</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img" src="assets/img/cap proyecto 2.png" alt="proyect " />
+
+        <div class="card-content">
+          <h3>Ecommerce</h3>
+          <p>Proyecto de Ecommerce</p>
+          <p>PHP, Bootstrap, Mysql</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img" src="assets/img/cap proyecto role game.png" alt="" />
+
+        <div class="card-content">
+          <h3>Role Game</h3>
+          <p>Proyecto de Role Game</p>
+          <p>HTML, CSS, JAVASCRIPT</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="seccion" id="experiencia&cursos">
     <div class="info-columns">
       <div class="info-blocks scroll-anim-exp">
         <div class="titulosblock">
@@ -286,7 +300,7 @@
     </div>
   </section> -->
 
-    <!-- <section class="seccion" id="cursos">
+  <!-- <section class="seccion" id="cursos">
     <div class="titulosblock">
       <h3>Curses</h3>
       <h1 class="title">CURSOS</h1>
@@ -354,79 +368,54 @@
     </div>
   </section> -->
 
-    <section class="seccion" id="contacto">
-      <div class="contact-container">
-        <div class="contact-info">
-          <div class="tituloscontacto">
-            <h3>Contact</h3>
-            <h1 class="title">CONTACTO</h1>
-          </div>
-          <ul>
-            <li><i class="fa-solid fa-envelope"></i> Ianoliva2000@gmail.com</li>
-            <li>
-              <i class="fa-solid fa-location-dot"></i> Buenos Aires, Argentina
-            </li>
-          </ul>
-          <ul class="contact-links">
-            <li>
-              <a
-                href="https://www.linkedin.com/in/ian-oliva-it/"
-                target="_blank"
-                aria-label="linkedin"
-                ><i class="fa-brands fa-linkedin icon"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/IanOliva"
-                target="_blank"
-                aria-label="github"
-                ><i class="fa-brands fa-github icon"></i
-              ></a>
-            </li>
-          </ul>
+  <section class="seccion" id="contacto">
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="tituloscontacto">
+          <h3>Contact</h3>
+          <h1 class="title">CONTACTO</h1>
         </div>
-
-        <div class="contact-form">
-          <form class="formulario">
-            <fieldset>
-              <legend>Déjame un mensaje o sugerencia</legend>
-              <div>
-                <label for="asunto"
-                  >Asunto:
-                  <input
-                    type="text"
-                    id="asunto"
-                    name="asunto"
-                    required
-                    aria-label="asunto"
-                  />
-                </label>
-              </div>
-
-              <div>
-                <label for="msg"
-                  >Mensaje:
-                  <textarea name="msg" id="mensaje" required></textarea>
-                </label>
-              </div>
-              <div class="contact-btns">
-                <button type="reset">Restablecer</button>
-                <a id="correoLink" href="" onclick="enviarCorreo()">enviar</a>
-              </div>
-            </fieldset>
-          </form>
-        </div>
+        <ul>
+          <li><i class="fa-solid fa-envelope"></i> Ianoliva2000@gmail.com</li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i> Buenos Aires, Argentina
+          </li>
+        </ul>
       </div>
-    </section>
 
-    <footer>
-      <p>Ian oliva responsive portfolio proyect</p>
-      <p>
-        <i class="fa-brands fa-html5"></i>
-        <i class="fa-brands fa-css3-alt"></i>
-        <i class="fa-brands fa-js"></i>
-      </p>
-    </footer>
-  </body>
+      <div class="contact-form">
+        <form class="formulario">
+          <fieldset>
+            <legend>Déjame un mensaje o sugerencia</legend>
+            <div>
+              <label for="asunto">Asunto:
+                <input type="text" id="asunto" name="asunto" required aria-label="asunto" />
+              </label>
+            </div>
+
+            <div>
+              <label for="msg">Mensaje:
+                <textarea name="msg" id="mensaje" required></textarea>
+              </label>
+            </div>
+            <div class="contact-btns">
+              <button type="reset">Restablecer</button>
+              <a id="correoLink" href="" onclick="enviarCorreo()">enviar</a>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Ian oliva responsive portfolio proyect</p>
+    <p>
+      <i class="fa-brands fa-html5"></i>
+      <i class="fa-brands fa-css3-alt"></i>
+      <i class="fa-brands fa-js"></i>
+    </p>
+  </footer>
+</body>
+
 </html>
