@@ -79,5 +79,3 @@ const typed = new Typed(".multiple-text", {
 // })
 
 
-var correoLink = document.getElementById("correoLink");
-correoLink.href = "mailto:ianoliva2000@gmail.com?subject=" + encodeURIComponent(asunto) + "&body=" + encodeURIComponent(mensaje);
