@@ -1,421 +1,200 @@
-<!DOCTYPE html>
-
-<html lang="es">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ian Oliva Portfolio</title>
-  <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
-  <!-- css -->
-  <link rel="stylesheet" href="/css/styleindex.css" />
-  <!-- fuentes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Bebas+Neue&family=Source+Sans+3&display=swap"
-    rel="stylesheet" />
-  <!-- animaciones -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <!-- iconos -->
-  <script src="https://kit.fontawesome.com/84f1588987.js" crossorigin="anonymous"></script>
-
-  <!-- Javascript -->
-  <script defer src="/Javascript/index.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio remake</title>
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Bebas+Neue&family=Source+Sans+3&display=swap"
+        rel="stylesheet" />
+    <!-- iconos -->
+    <script src="https://kit.fontawesome.com/84f1588987.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="dark-theme">
-  <header>
-    <nav class="navbar">
-      <div class="logo-container">
-        <a class="logo nav-link" href="index.html">IAN <span>OLIVA</span></a>
-       
-        
-        <button class="navtoggle" aria-label="Abrir menu">
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
-      <div class="nav-menu-container">
-        <ul class="nav-menu">
-        <li class="nav-menu-item">
-          <a class="nav-menu-link nav-link" href="#sobremi"> Sobre mi</a>
-        </li>
-        <li class="nav-menu-item">
-          <a class="nav-menu-link nav-link" href="#proyectos">Proyectos</a>
-        </li>
-        <!-- <li class="nav-menu-item">
-          <a class="nav-menu-link nav-link" href="#experiencia&cursos">Experiencia</a>
-        </li> -->
-        <!-- <li class="nav-menu-item">
-          <a class="nav-menu-link nav-link" href="#cursos">Cursos</a>
-        </li> -->
-        <li class="nav-menu-item">
-          <a class="nav-menu-link nav-link" href="#contacto">Contacto</a>
-        </li>
-      </ul>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Ian <span>Oliva</span> </a>
+        <!-- <button id="toggle-button" class="theme-toggle">
+            <img src="assets/icons/light-theme.png" id="sun-icon" alt="sun icon" />
+            <img src="assets/icons/dark-theme.png" id="moon-icon" alt="moon icon" class="hidden" />
+        </button> -->
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Inicio</a>
+            <a href="#sobremi">Sobre mi</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
 
-      <button id="toggle-button" class="theme-toggle">
-        <img src="assets/icons/light-theme.png" id="sun-icon" alt="sun icon">
-        <img src="assets/icons/dark-theme.png" id="moon-icon" alt="moon icon" class="hidden">
-      </button>
-      </div>
-      
-    </nav>
-  </header>
+    </header>
 
-  <section class="seccion" id="prasec">
-    <div id="main">
-      <h1>Hola soy <span>Ian Oliva</span></h1>
-      <h3>Developer Trainee</h3>
-      <p>
-        En busca de poder insertarme en el rubro de la tecnología, capacitado
-        en soft skills, estoy dispuesto a escuchar ofertas laborales
-        aprendiendo y aceptando nuevos desafios.
-      </p>
-      <div class="main-btns">
-        <a id="contact-btn" href="#contacto">Contactame</a>
-        <ul class="contact-links">
-          <li>
-            <a href="https://www.linkedin.com/in/ian-oliva-it/" target="_blank" aria-label="linkedin"><i
-                class="fa-brands fa-linkedin icon"></i></a>
-          </li>
-          <li>
-            <a href="https://github.com/IanOliva" target="_blank" aria-label="github"><i
-                class="fa-brands fa-github icon"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="bg-shape"></div>
-    <!-- <div class="slider-container">
-      <ul class="slider">
-        <li class="slider-item">
-          <img src="assets/icons/html-5.png" alt="html logo" />
-        </li>
-        <li class="slider-item">
-          <img src="assets/icons/css-3.png" alt="css logo" />
-        </li>
-        <li class="slider-item">
-          <img src="assets/icons/javascript.png" alt="js logo" />
-        </li>
-        <li class="slider-item">
-          <img src="assets/icons/bootstrap.png" alt="bootstrap logo" />
-        </li>
-        <li class="slider-item">
-          <img src="assets/icons/figma.png" alt="figma logo" />
-        </li>
-        <li class="slider-item">
-          <img src="assets/icons/photoshop.png" alt="photoshop logo" />
-        </li>
-        <li class="slider-item">
-          <img src="assets/icons/php.png" alt="php logo" />
-        </li>
-        <li class="slider-item">
-          <img src="assets/icons/mysql.png" alt="mysql logo" />
-        </li>
-      </ul>
-    </div> -->
-  </section>
+    <!-- section home -->
 
-  <section class="seccion" id="sobremi">
-    <div class="titulosblock">
-      <h3>About me</h3>
-      <h1>Sobre Mi</h1>
-    </div>
-
-    <div class="scroll-anim-sm" id="smcontenedor">
-      <div class="smblock" id="prog">
-        <div class="smblock-bg">
-          <h3><i class="fa-solid fa-code"></i> Programacion</h3>
-          <ul>
-            <li>C</li>
-            <li>C#</li>
-            <li>Javascript</li>
-          </ul>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hola! soy <span>Ian Oliva</span></h1>
+            
+            <h3> <span class="multiple-text"></span></h3>
+            <p>En busca de poder insertarme en el rubro de la tecnología, capacitado en soft skills, estoy dispuesto a
+                escuchar ofertas laborales aprendiendo y aceptando nuevos desafios.</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/ian-oliva-it/" target="_blank" aria-label="linkedin"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="assets/docs/Ián Oliva CV.pdf" target="_blank" class="btn">Descargar CV</a>
         </div>
-      </div>
 
-      <div class="smblock" id="lang">
-        <div class="smblock-bg">
-          <h3><i class="fa-regular fa-comments"></i> Idioma</h3>
-          <ul>
-            <li>Español Nativo</li>
-            <li>Ingles Intermedio</li>
-          </ul>
+        <div class="home-img">
+            <img src="assets/img/programmer.png" alt="programer logo">
         </div>
-      </div>
+    </section>
 
-      <div class="smblock" id="web">
-        <div class="smblock-bg">
-          <h3><i class="fa-solid fa-globe"></i> Desarrollo Web</h3>
-          <ul>
-            <li>HTML & CSS</li>
-            <li>PHP</li>
-          </ul>
+    <!-- section sobremi -->
+
+    <section class="sobremi" id="sobremi">
+        <div class="sobremi-img">
+            <img src="assets/img/profile-pic__2_-removebg-preview-transformed.png" alt="profile-pic">
         </div>
-      </div>
 
-      <div class="smblock" id="desing">
-        <div class="smblock-bg">
-          <h3><i class="fa-regular fa-pen-to-square"></i> Diseño Gráfico</h3>
-          <ul>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-          </ul>
+
+        <div class="sobremi-content">
+            <h2 class="heading">Sobre <span>mi</span></h2>
+            <h3>Programador | Buenos Aires</h3>
+            <p>Soy Ian Oliva, un apasionado programador jr con formación académica en la Universidad Tecnológica
+                Nacional. Mi viaje en el mundo de la programación comenzó durante mis estudios, donde adquirí una sólida
+                base en conceptos clave y desarrollé habilidades en diversas tecnologías. No solo obtuve conocimientos
+                técnicos, sino también desarrollé habilidades de trabajo en equipo y resolución de problemas entre demás
+                Softs Skills. Mi objetivo es contribuir de manera significativa en un equipo de desarrollo, aplicando mi
+                pasión por la programación y mi deseo de aprender y crecer.</p>
+
+                
+            
+            <p>Tecnologías y herramientas que manejo:</p>
+            <div class="slider-container">
+                <ul class="slider">
+                    <li class="slider-item">
+                        <img src="assets/icons/html-5.png" alt="html logo" />
+                    </li>
+                    <li class="slider-item">
+                        <img src="assets/icons/css-3.png" alt="css logo" />
+                    </li>
+                    <li class="slider-item">
+                        <img src="assets/icons/javascript.png" alt="js logo" />
+                    </li>
+                    <li class="slider-item">
+                        <img src="assets/icons/bootstrap.png" alt="bootstrap logo" />
+                    </li>
+                    <li class="slider-item">
+                        <img src="assets/icons/figma.png" alt="figma logo" />
+                    </li>
+                    <li class="slider-item">
+                        <img src="assets/icons/photoshop.png" alt="photoshop logo" />
+                    </li>
+                    <li class="slider-item">
+                        <img src="assets/icons/php.png" alt="php logo" />
+                    </li>
+                    <li class="slider-item">
+                        <img src="assets/icons/mysql.png" alt="mysql logo" />
+                    </li>
+                </ul>
+            </div>
+            <p>Estoy dedicando mi tiempo a proyectos personales que están reforzando mi habilidad para enfrentar
+                desafíos y resolver problemas de manera creativa.</p>
+
+            <p>Actualmente aprendiendo: <strong>Fullstack Node.js</strong></p>
+            <a href="https://www.linkedin.com/in/ian-oliva-it/" target="_blank" aria-label="linkedin" class="btn">Ver
+                mas</a>
         </div>
-      </div>
+    </section>
 
-      <div class="smblock" id="soft">
-        <div class="smblock-bg">
-          <h3><i class="fa-regular fa-folder-open"></i> Software</h3>
-          <ul>
-            <li>office</li>
-            <li>windows & linux</li>
-            <li>windows Server</li>
-            <li>Team viewer</li>
-          </ul>
-        </div>
-      </div>
+    <!-- section proyectos -->
 
-      <div class="smblock" id="database">
-        <div class="smblock-bg">
-          <h3><i class="fa-solid fa-database"></i> Base de datos</h3>
-          <ul>
-            <li>MySql</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="seccion" id="proyectos">
-    <div class="titulosblock">
-      <h3>Proyects</h3>
-      <h1>Proyectos</h1>
-    </div>
-
-    <div class="scroll-anim-pr" id="procontainer">
-      <div class="card">
-        <img class="card-img" src="assets/img/cap proyecto card.png" alt="proyect card" />
-
-        <div class="card-content">
-          <h3>Business Card</h3>
-          <p>Proyecto de tarjeta personal</p>
-          <p>HTML, CSS</p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img" src="assets/img/cap proyecto 2.png" alt="proyect " />
-
-        <div class="card-content">
-          <h3>Ecommerce</h3>
-          <p>Proyecto de Ecommerce</p>
-          <p>PHP, Bootstrap, Mysql</p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img" src="assets/img/cap proyecto role game.png" alt="" />
-
-        <div class="card-content">
-          <h3>Role Game</h3>
-          <p>Proyecto de Role Game</p>
-          <p>HTML, CSS, JAVASCRIPT</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- <section class="seccion" id="experiencia&cursos">
-    <div class="info-columns">
-      <div class="info-blocks scroll-anim-exp">
-        <div class="titulosblock">
-          <h3>Experience</h3>
-          <h1 class="title">EXPERIENCIA</h1>
-        </div>
-        <div class="block">
-          <ul>
-            <li>
-              <h2>IN Sublimaciones</h2>
-            </li>
-            <li>
-              <h3>Emprendimiento personal 2020 - actualidad</h3>
-            </li>
-          </ul>
-          <ul>
-            <li>Gestión y Administración</li>
-            <li>Atención al Cliente</li>
-            <li>Marketing</li>
-          </ul>
-        </div>
-        <div class="block">
-          <ul>
-            <li>
-              <h2>Mercado Libre</h2>
-            </li>
-            <li>
-              <h3>Representante de envios - 2020</h3>
-            </li>
-          </ul>
-          <ul>
-            <li>Carga y descarga de paquetería</li>
-            <li>Clasificación de paquetes</li>
-            <li>Recogida y embalaje</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="info-blocks scroll-anim-cur">
-        <div class="titulosblock">
-          <h3>Studies</h3>
-          <h1>ESTUDIOS</h1>
-        </div>
-        <div class="block">
-          <ul>
-            <li>
-              <h2>Universidad Tecnológica Nacional</h2>
-            </li>
-
-            <li>
-              <h4>2021 - en curso</h4>
-            </li>
-          </ul>
-          <ul>
-            <li>Técnico universitario en sistemas informáticos</li>
-            <li>Técnico universitario en programación</li>
-          </ul>
-        </div>
-        <div class="block">
-          <ul>
-            <li>
-              <h2>Instituto La Trinidad</h2>
-            </li>
-            <li>
-              <h3>Secundario Completo - 2017</h3>
-            </li>
-          </ul>
-          <ul>
-            <li>Bachiller en economía y administración</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- <section class="seccion" id="cursos">
-    <div class="titulosblock">
-      <h3>Curses</h3>
-      <h1 class="title">CURSOS</h1>
-    </div>
-    <div class="c-container">
-      <div class="c-block scroll-anim-cur-l" id="rep">
-        <div class="c-img">
-          <img src="https://academia.comunidadreparando.com/wp-content/uploads/2022/07/cropped-logo-black.webp"
-            width="200px" height="auto" alt="">
-        </div>
-        <ul>
-          <li>
-            <h2>Comunidad Reparando</h2>
-          </li>
-          <li>
-            <h3>Reparador de PC - 2022</h3>
-          </li>
-        </ul>
-        <ul>
-          <li>Reparación de computadoras de escritorio y notebooks</li>
-        </ul>
-      </div>
-
-      <div class="c-block scroll-anim-cur-m" id="sup">
-        <div class="c-img">
-          <img src="https://junior.org.ar/wp-content/uploads/2022/08/Junior-Achievement-Argentina_Positivo-1.png"
-            width="200px" height="auto" alt="">
-        </div>
-        <ul>
-          <li>
-            <h2>Google + Junior Achievement Arg</h2>
-          </li>
-          <li>
-            <h3>Soporte en Tecnologías de la información - 2021</h3>
-          </li>
-        </ul>
-        <ul>
-          <li>Asistencia técnica, redes,sistemas operativos, administracion de sistemas e infraestructura IT, seguridad
-            informatica</li>
-
-        </ul>
-      </div>
-
-      <div class="c-block scroll-anim-cur-r" id="lyf">
-        <div class="c-img">
-          <img src="https://centrodedesarrollosocialluzyfuerza.com.ar/wp-content/uploads/2023/02/15-2.jpg" width="100px"
-            height="auto" alt="">
-        </div>
-        <ul>
-          <li>
-            <h2>Centro de formación profesional N° 407</h2>
-          </li>
-          <li>
-            <h3>-Practico en diseño grafico - 2018</h3>
-          </li>
-          <li>
-            <h3>-Operador de PC bajo entorno grafico - 2018</h3>
-          </li>
-        </ul>
-        <ul>
-          <li>Illustrator, Photoshop, Manejo de Pc, Animación</li>
-
-        </ul>
-      </div>
-    </div>
-  </section> -->
-
-  <section class="seccion" id="contacto">
-    <div class="contact-container">
-      <div class="contact-info">
-        <div class="tituloscontacto">
-          <h3>Contact</h3>
-          <h1 class="title">CONTACTO</h1>
-        </div>
-        <ul>
-          <li><i class="fa-solid fa-envelope"></i> Ianoliva2000@gmail.com</li>
-          <li>
-            <i class="fa-solid fa-location-dot"></i> Buenos Aires, Argentina
-          </li>
-        </ul>
-      </div>
-
-      <div class="contact-form">
-        <form class="formulario">
-          <fieldset>
-            <legend>Déjame un mensaje o sugerencia</legend>
-            <div>
-              <label for="asunto">Asunto:
-                <input type="text" id="asunto" name="asunto" required aria-label="asunto" />
-              </label>
+    <section class="proyectos" id="proyectos">
+        <h2 class="heading">Mis <span>proyectos</span">
+        </h2>
+        <div class="proyectos-container">
+            <div class="proyectos-card">
+                <img src="assets/img/ecommerce.png" alt="ecommerce">
+                <div class="proyectos-layer">
+                    <h4>Ecommerce</h4>
+                    <p>Proyecto de Ecommerce</p>
+                    <p>PHP, Bootstrap, Mysql</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
             </div>
 
-            <div>
-              <label for="msg">Mensaje:
-                <textarea name="msg" id="mensaje" required></textarea>
-              </label>
+            <div class="proyectos-card">
+                <img src="assets/img/cap proyecto role game.png" alt="ecommerce">
+                <div class="proyectos-layer">
+                    <h4>Role Game</h4>
+                    <p>Proyecto de juego de rol</p>
+                    <p>HTML, CSS, JAVASCRIPT</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
             </div>
-            <div class="contact-btns">
-              <button type="reset">Restablecer</button>
-              <a id="correoLink" href="" onclick="enviarCorreo()">enviar</a>
+
+
+            <div class="proyectos-card">
+                <img src="assets/img/cap proyecto card.png" alt="Business card">
+                <div class="proyectos-layer">
+                    <h4>Bussiness Card</h4>
+                    <p>Proyecto de tarjeta personal</p>
+                    <p>HTML, CSS</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
             </div>
-          </fieldset>
+
+
+
+        </div>
+
+
+
+    </section>
+
+    <!-- section contacto -->
+
+    <section class="contacto" id="contacto">
+        <h2 class="heading">Dejame un mensaje <span>o sugerencia</span></h2>
+
+        <form action="#">
+
+            <div class="input-box">
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Asunto">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+            <input type="submit" value="Enviar mensaje" class="btn">
+
         </form>
-      </div>
-    </div>
-  </section>
 
-  <footer>
-    <p>Ian oliva responsive portfolio proyect</p>
-    <p>
-      <i class="fa-brands fa-html5"></i>
-      <i class="fa-brands fa-css3-alt"></i>
-      <i class="fa-brands fa-js"></i>
-    </p>
-  </footer>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Ian Oliva responsive portfolio proyect</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angles-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="index.js"></script>
+
 </body>
 
 </html>

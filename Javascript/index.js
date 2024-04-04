@@ -1,131 +1,80 @@
-// barra de navegacion desplegable
+// active links
+let secciones = document.querySelectorAll("section");
+let navLinks = document.querySelectorAll("header nav a");
 
-const navtoggle = document.querySelector(".navtoggle");
-const navmenu = document.querySelector(".nav-menu");
- 
-navtoggle.addEventListener("click", () => {
-  
-  if (navmenu.style.display === "flex") {
-      navmenu.style.display = "none";
-      navtoggle.setAttribute("aria-label", "Abrir menú");
-  } else {
-      navmenu.style.display = "flex";
-      navtoggle.setAttribute("aria-label", "Cerrar menú");
-  }
-  
-});
+window.onscroll = () => {
+  secciones.forEach((seccion) => {
+    let top = window.scrollY;
+    let offset = seccion.offsetTop - 150;
+    let height = seccion.offsetHeight;
+    let id = seccion.getAttribute("id");
 
-// tema claro/oscuro
+    if (top >= offset && top < offset + height) {
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        document
+          .querySelector("header nav a[href*=" + id + "]")
+          .classList.add("active");
+      });
+    }
+  });
 
+  // sticky navbar
 
-const body = document.querySelector('body');
-const toggleButton = document.querySelector('#toggle-button');
-const moonIcon = document.querySelector('#moon-icon');
-const sunIcon = document.querySelector('#sun-icon');
+  let header = document.querySelector("header");
 
+  header.classList.toggle("sticky", window.scrollY > 100);
 
-function toggleTheme() {
-  body.classList.toggle('dark-theme');
-  toggleButton.classList.toggle('active');
-  moonIcon.classList.toggle('hidden');
-  sunIcon.classList.toggle('hidden');
-}
+  // remove toggle icon and navbar when click navbar link (scroll)
+  menuIcon.classList.remove("fa-x");
+  navbar.classList.remove("active");
+};
 
+// navbar toggle
 
-toggleButton.addEventListener('click', toggleTheme);
+let menuIcon = document.querySelector("#menu-icon");
+let navbar = document.querySelector(".navbar");
 
-// animaciones de scroll (seccion sobre mi)
+menuIcon.onclick = () => {
+  menuIcon.classList.toggle("fa-x");
+  navbar.classList.toggle("active");
+};
 
-window.addEventListener("scroll", () => {
-  const element = document.querySelector(".scroll-anim-sm");
+// scroll reveal
 
-  const elementPosition = element.getBoundingClientRect().top;
-  const screenHeight = window.innerHeight;
+ScrollReveal({
+//   reset: true,
+  distance: "60px",
+  duration: 2500,
+  delay: 400
+})
 
-  if (elementPosition < screenHeight) {
-    element.style.animation = "fadeIn 3s";
-  }
-});
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' })
+ScrollReveal().reveal('.home-img, .proyectos-container, .contacto', { origin: 'bottom' })
+ScrollReveal().reveal('.home-content h1, .sobremi-img', { origin: 'left' })
+ScrollReveal().reveal('.home-content p, .sobremi-content', { origin: 'right' })
 
-// animaciones de scroll (seccion proyectos)
+// typewriter
 
-window.addEventListener("scroll", () => {
-  const element = document.querySelector(".scroll-anim-pr");
+const typed = new Typed(".multiple-text", {
+    strings: ["Frontend Developer", "Backend Developer", "IT Support"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+})
 
-  const elementPosition = element.getBoundingClientRect().top;
-  const screenHeight = window.innerHeight;
+// theme toggle
 
-  if (elementPosition < screenHeight) {
-    element.style.animation = "fadeInUp 2s";
-  }
-});
+// const body = document.querySelector("body");
+// const toggleButton = document.querySelector("#toggle-button");
+// const moonIcon = document.querySelector("#moon-icon");
+// const sunIcon = document.querySelector("#sun-icon");
 
-// animaciones de scroll (seccion exp y edu)
-
-window.addEventListener("scroll", () => {
-  const element = document.querySelector(".scroll-anim-exp");
-
-  const elementPosition = element.getBoundingClientRect().top;
-  const screenHeight = window.innerHeight;
-
-  if (elementPosition < screenHeight) {
-    element.style.animation = "fadeInLeft 2s";
-  }
-});
-
-window.addEventListener("scroll", () => {
-  const element = document.querySelector(".scroll-anim-cur");
-
-  const elementPosition = element.getBoundingClientRect().top;
-  const screenHeight = window.innerHeight;
-
-  if (elementPosition < screenHeight) {
-    element.style.animation = "fadeInRight 2s";
-  }
-});
-
-// animaciones de scroll (seccion cursos)
-
-window.addEventListener("scroll", () => {
-  const element = document.querySelector(".scroll-anim-cur-l");
-
-  const elementPosition = element.getBoundingClientRect().top;
-  const screenHeight = window.innerHeight;
-
-  if (elementPosition < screenHeight) {
-    element.style.animation = "fadeInLeft 2s";
-  }
-});
-
-
-window.addEventListener("scroll", () => {
-  const element = document.querySelector(".scroll-anim-cur-m");
-
-  const elementPosition = element.getBoundingClientRect().top;
-  const screenHeight = window.innerHeight;
-
-  if (elementPosition < screenHeight) {
-    element.style.animation = "fadeInUp 2s";
-  }
-});
-
-window.addEventListener("scroll", () => {
-  const element = document.querySelector(".scroll-anim-cur-r");
-
-  const elementPosition = element.getBoundingClientRect().top;
-  const screenHeight = window.innerHeight;
-
-  if (elementPosition < screenHeight) {
-    element.style.animation = "fadeInRight 2s";
-  }
-});
-
-
-function enviarCorreo() {
-  var asunto = document.getElementById("asunto").value;
-  var mensaje = document.getElementById("mensaje").value;
-  var correoLink = document.getElementById("correoLink");
-  correoLink.href = "mailto:ianoliva2000@gmail.com?subject=" + encodeURIComponent(asunto) + "&body=" + encodeURIComponent(mensaje);
-}
-
+// toggleButton.addEventListener("click", () => {
+//   body.classList.toggle("dark-theme");
+//   toggleButton.classList.toggle("active");
+//   moonIcon.classList.toggle("hidden");
+//   sunIcon.classList.toggle("hidden");
+// })
 
