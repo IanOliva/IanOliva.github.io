@@ -177,12 +177,12 @@ span {
 
 
 .heading {
-  text-align: center;
+  /* text-align: center; */
   font-size: 4.5rem;
 }
 
 .sobremi-content h2 {
-  text-align: left;
+  
   line-height: 1.2;
 }
 
@@ -193,6 +193,10 @@ span {
 .sobremi-content p {
   font-size: 1.6rem;
   margin: 1rem 0 2rem;
+}
+.sobremi-content p:nth-child(4) {
+  
+  color: var(--main-color)
 }
 
 .slider-container {
@@ -226,6 +230,10 @@ span {
 .proyectos {
   background: var(--bg-color);
   
+}
+
+.proyectos .heading{
+  text-align: center;
 }
 
 .proyectos h2 {
@@ -301,6 +309,10 @@ span {
 .proyectos-layer a i {
   font-size: 2rem;
   color: var(--second-bg-color);
+}
+
+.contacto .heading{
+  text-align: center;
 }
 
 .contacto h2 {
@@ -448,15 +460,35 @@ span {
 
   .home-img img {
     width: 70vw;
+    margin-top: 4rem;
   }
+
+  
 
   .sobremi {
     flex-direction: column-reverse;
+    align-items: initial;
+    
   }
-
+    
+  .sobremi {
+    text-align: center;
+  }
+  
+  
   .sobremi img {
     width: 70vw;
     margin-bottom: 4rem;
+    
+  }
+
+  .sobremi-content p:nth-child(4) {
+    text-align: center;
+    color: var(--main-color)
+  }
+
+  .slider-container {
+    max-width: 100%;
   }
 
   .slider-item img{
