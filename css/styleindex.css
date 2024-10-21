@@ -37,9 +37,9 @@ section {
   left: 0;
   width: 100%;
   padding: 2rem 9%;
-  background: var(--bg-color);
+  backdrop-filter: blur(5px);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   z-index: 100;
 }
@@ -83,24 +83,73 @@ section {
   height: 3rem;
 }
 
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Asegúrate de que esté sobre otros elementos */
+  width: 80px;
+  height: 40px;
+  color: #000;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  padding: 3px;
+  background: 
+    repeating-linear-gradient(90deg,currentColor 0 10px,#0000 0 15px) 
+    0/0% no-repeat content-box content-box;
+  position: relative;
+  box-sizing: border-box;
+  animation: l5 2s infinite steps(6);
+}
+.loader::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: 100%;
+  width: 10px;
+  background:
+    linear-gradient(
+        #0000   calc(50% - 7px),currentColor 0 calc(50% - 5px),
+        #0000 0 calc(50% + 5px),currentColor 0 calc(50% + 7px),#0000 0) left /100% 100%,
+    linear-gradient(currentColor calc(50% - 5px),#0000        0 calc(50% + 5px),currentColor 0) left /2px 100%,
+    linear-gradient(#0000        calc(50% - 5px),currentColor 0 calc(50% + 5px),#0000        0) right/2px 100%;
+  background-repeat:no-repeat;
+}
+@keyframes l5 {
+    100% {background-size:120%}
+}
+
+/* section home */
+
 .home {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 80%,
       var(--bg-color) 100%
     ),
-    url("/assets/img/background-paisaje.jpg") center/cover no-repeat;
-}
+    url(../assets/img/background-paisaje.jpg) center/cover no-repeat;*/
+} 
 
 .home-content {
-  backdrop-filter: blur(5px) saturate(180%);
-  -webkit-backdrop-filter: blur(5px) saturate(180%);
-  background-color: rgba(17, 25, 40, 0.3);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  text-align: center;
+  width: 80%;
+  
   
 }
 
@@ -109,25 +158,30 @@ section {
   font-weight: 700;
 }
 
-.home-content h3:nth-of-type(2) {
-  margin-bottom: 2rem;
+.home-content hr {
+  border: 0;
+  height: 1px;
+  background: var(--main-color);
+  width: 50%;
+  margin: 1rem auto;
 }
+
 
 span {
   color: var(--main-color);
 }
 
 .home-content h1 {
-  font-size: 5.6rem;
+  font-size: 8rem;
   font-weight: 700;
   line-height: 1.3;
 }
 
 .home-content p {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
-.home-img img {
+/* .home-img img {
   width: 35vw;
 
   backdrop-filter: blur(5px) saturate(180%);
@@ -135,7 +189,7 @@ span {
   background-color: rgba(17, 25, 40, 0.3);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
-}
+} */
 
 .social-media a {
   display: inline-flex;
@@ -143,12 +197,13 @@ span {
   align-items: center;
   width: 4rem;
   height: 4rem;
+  margin: 2rem 1.5rem;
   background: transparent;
   border: 0.2rem solid var(--main-color);
   border-radius: 50%;
   font-size: 2rem;
   color: var(--main-color);
-  margin: 3rem 1.5rem 3rem 0;
+  /* margin: 3rem 1.5rem 3rem 0; */
   transition: 0.5s ease;
 }
 
@@ -159,7 +214,8 @@ span {
 }
 
 .btn {
-  display: inline-block;
+  width: 30%;
+  margin: 0 auto;
   padding: 1rem 2.8rem;
   background: var(--main-color);
   border-radius: 4rem;
@@ -174,6 +230,9 @@ span {
 .btn:hover {
   box-shadow: none;
 }
+
+
+/* section sobremi */
 
 .sobremi {
   display: flex;

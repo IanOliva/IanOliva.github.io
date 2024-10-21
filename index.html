@@ -1,231 +1,289 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ian Oliva Portfolio</title>
-    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/css/styleindex.css">
+    <link
+      rel="shortcut icon"
+      href="assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/styleindex.css" />
     <!-- fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Bebas+Neue&family=Source+Sans+3&display=swap"
-        rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Bebas+Neue&family=Source+Sans+3&display=swap"
+      rel="stylesheet"
+    />
     <!-- iconos -->
-    <script src="https://kit.fontawesome.com/84f1588987.js" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://kit.fontawesome.com/84f1588987.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
+    <div class="loader-overlay">
+        <div class="loader"></div>
+      </div>
+      
+    <div id="particles-js"></div>
+
     <header class="header">
-        <a href="/" class="logo">Ian <span>Oliva</span> </a>
-        <!-- <button id="toggle-button" class="theme-toggle">
+      <!-- <a href="/" class="logo">Ian <span>Oliva</span> </a> -->
+      <!-- <button id="toggle-button" class="theme-toggle">
             <img src="assets/icons/light-theme.png" id="sun-icon" alt="sun icon" />
             <img src="assets/icons/dark-theme.png" id="moon-icon" alt="moon icon" class="hidden" />
         </button> -->
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home" class="active">Inicio</a>
-            <a href="#sobremi">Sobre mi</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Inicio</a>
+        <a href="#sobremi">Sobre mi</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
     </header>
 
     <!-- section home -->
 
     <section class="home" id="home">
-        
-            <div class="home-content">
-                <h1>Hola! soy <span>Ian Oliva</span></h1>
-                
-                <h3> <span class="multiple-text"></span></h3>
-                <p>En busca de poder insertarme en el rubro de la tecnología, capacitado en soft skills, estoy dispuesto a
-                    escuchar ofertas laborales aprendiendo y aceptando nuevos desafios.</p>
-                <div class="social-media">
-                    <a href="https://www.linkedin.com/in/ian-oliva-it/" target="_blank" aria-label="linkedin"><i
-                            class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <a href="assets/docs/Ián Oliva CV.pdf" target="_blank" class="btn">Descargar CV</a>
-            </div>
+      <div class="home-content">
+        <h1>Hola! soy <span>Ian Oliva</span></h1>
 
-            <div class="home-img">
+        <h3><span class="multiple-text"></span></h3>
+        <p>
+          En busca de poder insertarme en el rubro de la tecnología, capacitado
+          en soft skills, estoy dispuesto a escuchar ofertas laborales
+          aprendiendo y aceptando nuevos desafios.
+        </p>
+        <hr />
+        <div class="social-media">
+          <a
+            href="https://www.linkedin.com/in/ian-oliva-it/"
+            target="_blank"
+            aria-label="linkedin"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://github.com/IanOliva"
+            target="_blank"
+            aria-label="github"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/_ian.olv_/?igsh=ajhsb3BpaHI3amg1"
+            target="_blank"
+            aria-label="instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+        <a href="assets/docs/Ián Oliva CV.pdf" target="_blank" class="btn"
+          >Ver CV</a
+        >
+      </div>
+
+      <!-- <div class="home-img">
                 <img src="assets/img/programmer.png" alt="programer logo">
-            </div>
-        
+            </div> -->
     </section>
 
     <!-- section sobremi -->
 
     <section class="sobremi" id="sobremi">
-        <div class="sobremi-img">
-            <img src="assets/img/profile-pic__2_-removebg-preview-transformed.png" alt="profile-pic">
+      <div class="sobremi-img">
+        <img
+          src="assets/img/profile-pic__2_-removebg-preview-transformed.png"
+          alt="profile-pic"
+        />
+      </div>
+
+      <div class="sobremi-content">
+        <h2 class="heading">Sobre <span>mi</span></h2>
+        <h3>Programador | Buenos Aires</h3>
+        <p>
+          Soy Ian Oliva, un apasionado programador jr con formación académica en
+          la Universidad Tecnológica Nacional. Mi viaje en el mundo de la
+          programación comenzó durante mis estudios, donde adquirí una sólida
+          base en conceptos clave y desarrollé habilidades en diversas
+          tecnologías. No solo obtuve conocimientos técnicos, sino también
+          desarrollé habilidades de trabajo en equipo y resolución de problemas
+          entre demás Softs Skills. Mi objetivo es contribuir de manera
+          significativa en un equipo de desarrollo, aplicando mi pasión por la
+          programación y mi deseo de aprender y crecer.
+        </p>
+
+        <p>Tecnologías y herramientas que manejo:</p>
+        <div class="slider-container">
+          <ul class="slider">
+            <li class="slider-item">
+              <img src="assets/icons/html-5.png" alt="html logo" />
+            </li>
+            <li class="slider-item">
+              <img src="assets/icons/css-3.png" alt="css logo" />
+            </li>
+            <li class="slider-item">
+              <img src="assets/icons/javascript.png" alt="js logo" />
+            </li>
+            <li class="slider-item">
+              <img src="assets/icons/bootstrap.png" alt="bootstrap logo" />
+            </li>
+            <li class="slider-item">
+              <img src="assets/icons/figma.png" alt="figma logo" />
+            </li>
+            <li class="slider-item">
+              <img src="assets/icons/photoshop.png" alt="photoshop logo" />
+            </li>
+            <li class="slider-item">
+              <img src="assets/icons/php.png" alt="php logo" />
+            </li>
+            <li class="slider-item">
+              <img src="assets/icons/mysql.png" alt="mysql logo" />
+            </li>
+          </ul>
         </div>
+        <p>
+          Estoy dedicando mi tiempo a proyectos personales que están reforzando
+          mi habilidad para enfrentar desafíos y resolver problemas de manera
+          creativa.
+        </p>
 
-
-        <div class="sobremi-content">
-            <h2 class="heading">Sobre <span>mi</span></h2>
-            <h3>Programador | Buenos Aires</h3>
-            <p>Soy Ian Oliva, un apasionado programador jr con formación académica en la Universidad Tecnológica
-                Nacional. Mi viaje en el mundo de la programación comenzó durante mis estudios, donde adquirí una sólida
-                base en conceptos clave y desarrollé habilidades en diversas tecnologías. No solo obtuve conocimientos
-                técnicos, sino también desarrollé habilidades de trabajo en equipo y resolución de problemas entre demás
-                Softs Skills. Mi objetivo es contribuir de manera significativa en un equipo de desarrollo, aplicando mi
-                pasión por la programación y mi deseo de aprender y crecer.</p>
-
-                
-            
-            <p>Tecnologías y herramientas que manejo:</p>
-            <div class="slider-container">
-                <ul class="slider">
-                    <li class="slider-item">
-                        <img src="assets/icons/html-5.png" alt="html logo" />
-                    </li>
-                    <li class="slider-item">
-                        <img src="assets/icons/css-3.png" alt="css logo" />
-                    </li>
-                    <li class="slider-item">
-                        <img src="assets/icons/javascript.png" alt="js logo" />
-                    </li>
-                    <li class="slider-item">
-                        <img src="assets/icons/bootstrap.png" alt="bootstrap logo" />
-                    </li>
-                    <li class="slider-item">
-                        <img src="assets/icons/figma.png" alt="figma logo" />
-                    </li>
-                    <li class="slider-item">
-                        <img src="assets/icons/photoshop.png" alt="photoshop logo" />
-                    </li>
-                    <li class="slider-item">
-                        <img src="assets/icons/php.png" alt="php logo" />
-                    </li>
-                    <li class="slider-item">
-                        <img src="assets/icons/mysql.png" alt="mysql logo" />
-                    </li>
-                </ul>
-            </div>
-            <p>Estoy dedicando mi tiempo a proyectos personales que están reforzando mi habilidad para enfrentar
-                desafíos y resolver problemas de manera creativa.</p>
-
-            <p>Actualmente aprendiendo: <strong>Fullstack Node.js</strong></p>
-            <a href="https://www.linkedin.com/in/ian-oliva-it/" target="_blank" aria-label="linkedin" class="btn">Ver
-                mas</a>
-        </div>
+        <p>Actualmente aprendiendo: <strong>Fullstack Node.js</strong></p>
+        <a
+          href="https://www.linkedin.com/in/ian-oliva-it/"
+          target="_blank"
+          aria-label="linkedin"
+          class="btn"
+          >Ver mas</a
+        >
+      </div>
     </section>
 
     <!-- section proyectos -->
 
     <section class="proyectos" id="proyectos">
-        <h2 class="heading">Mis <span>proyectos</span">
-        </h2>
-        <div class="proyectos-container">
-            <div class="proyectos-card">
-                <img src="assets/img/ecommerce.png" alt="ecommerce">
-                <div class="proyectos-layer">
-                    <h4>Ecommerce</h4>
-                    <p>Proyecto de Ecommerce</p>
-                    <p>PHP, Bootstrap, Mysql</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-
-            <div class="proyectos-card">
-                <img src="assets/img/cap proyecto role game.png" alt="ecommerce">
-                <div class="proyectos-layer">
-                    <h4>Role Game</h4>
-                    <p>Proyecto de juego de rol</p>
-                    <p>HTML, CSS, JAVASCRIPT</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-
-            <div class="proyectos-card">
-                <img src="assets/img/ticket-track.png" alt="Sistema de Tickets">
-                <div class="proyectos-layer">
-                    <h4>Ticket Track</h4>
-                    <p>Sistema de Tickets</p>
-                    <p>Node.js, express, mysql</p>
-                    <a href="https://ticket-track-lilac.vercel.app"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-
-            <div class="proyectos-card">
-                <img src="assets/img/cap proyecto card.png" alt="Business card">
-                <div class="proyectos-layer">
-                    <h4>Bussiness Card</h4>
-                    <p>Proyecto de tarjeta personal</p>
-                    <p>HTML, CSS</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-
-            <div class="proyectos-card">
-                <img src="assets/img/en desarrollo.png" alt="Elite Gym">
-                <div class="proyectos-layer">
-                    <h4>Elite Gym</h4>
-                    <p>Landing page</p>
-                    <p>Laravel 11</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            
-            <div class="proyectos-card">
-                <img src="/assets/img/en desarrollo.png" alt="Proximamente">
-                <div class="proyectos-layer">
-                    <h4></h4>
-                    <p></p>
-                    <p></p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-
-
-
+      <h2 class="heading">Mis <span>proyectos</span></h2>
+      <div class="proyectos-container">
+        <div class="proyectos-card">
+          <img src="assets/img/ecommerce.png" alt="ecommerce" />
+          <div class="proyectos-layer">
+            <h4>Ecommerce</h4>
+            <p>Proyecto de Ecommerce</p>
+            <p>PHP, Bootstrap, Mysql</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
         </div>
 
+        <div class="proyectos-card">
+          <img src="assets/img/cap proyecto role game.png" alt="ecommerce" />
+          <div class="proyectos-layer">
+            <h4>Role Game</h4>
+            <p>Proyecto de juego de rol</p>
+            <p>HTML, CSS, JAVASCRIPT</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
 
+        <div class="proyectos-card">
+          <img src="assets/img/ticket-track.png" alt="Sistema de Tickets" />
+          <div class="proyectos-layer">
+            <h4>Ticket Track</h4>
+            <p>Sistema de Tickets</p>
+            <p>Node.js, express, mysql</p>
+            <a href="https://ticket-track-lilac.vercel.app"
+              ><i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
 
+        <div class="proyectos-card">
+          <img src="assets/img/cap proyecto card.png" alt="Business card" />
+          <div class="proyectos-layer">
+            <h4>Bussiness Card</h4>
+            <p>Proyecto de tarjeta personal</p>
+            <p>HTML, CSS</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="proyectos-card">
+          <img src="assets/img/en desarrollo.png" alt="Elite Gym" />
+          <div class="proyectos-layer">
+            <h4>Elite Gym</h4>
+            <p>Landing page</p>
+            <p>Laravel 11</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="proyectos-card">
+          <img src="/assets/img/en desarrollo.png" alt="Proximamente" />
+          <div class="proyectos-layer">
+            <h4></h4>
+            <p></p>
+            <p></p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- section contacto -->
 
     <section class="contacto" id="contacto">
-        <h2 class="heading">Dejame un mensaje <span>o sugerencia</span></h2>
+      <h2 class="heading">Dejame un mensaje <span>o sugerencia</span></h2>
 
-        <form action="https://formsubmit.co/7429be194219ea71f9313eae513ae943" method="post">
-
-            <div class="input-box">
-                <input type="text" placeholder="Nombre" name="nombre">
-                <input type="email" placeholder="Email" name="email">
-            </div>
-            <div class="input-box">
-                <input type="text" placeholder="Asunto" name="asunto">
-            </div>
-            <textarea id="" cols="30" rows="10" placeholder="Escribe tu mensaje" name="mensaje"></textarea>
-            <input type="submit" value="Enviar mensaje" class="btn">
-
-        </form>
-
+      <form
+        action="https://formsubmit.co/7429be194219ea71f9313eae513ae943"
+        method="post"
+      >
+        <div class="input-box">
+          <input type="text" placeholder="Nombre" name="nombre" />
+          <input type="email" placeholder="Email" name="email" />
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Asunto" name="asunto" />
+        </div>
+        <textarea
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Escribe tu mensaje"
+          name="mensaje"
+        ></textarea>
+        <input type="submit" value="Enviar mensaje" class="btn" />
+      </form>
     </section>
 
     <!-- footer -->
 
     <footer class="footer">
-        <div class="footer-text">
-            <p>Ian Oliva responsive portfolio proyect</p>
-        </div>
-        <div class="footer-iconTop">
-            <a href="#home"><i class="fa-solid fa-angles-up"></i></a>
-        </div>
+      <div class="footer-text">
+        <p>Ian Oliva responsive portfolio proyect</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#home"><i class="fa-solid fa-angles-up"></i></a>
+      </div>
     </footer>
 
+    <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
+    <!-- typed js -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="Javascript/particles/particles.js"></script>
+    <!-- custom js -->
+    <script src="Javascript/index.js"></script>
 
-    <script src="/Javascript/index.js"></script>
-
-</body>
-
+    <script>
+      window.addEventListener("load", function () {
+        // Oculta el loader una vez que la página está completamente cargada
+        document.querySelector(".loader").style.display = "none";
+      });
+    </script>
+  </body>
 </html>
