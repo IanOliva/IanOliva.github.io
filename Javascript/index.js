@@ -49,10 +49,11 @@ ScrollReveal({
   delay: 400
 })
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' })
-ScrollReveal().reveal('.home-img, .proyectos-container, .contacto', { origin: 'bottom' })
+ScrollReveal().reveal('.home-content', { origin: 'top' , delay: 4000 })
+ScrollReveal().reveal('.heading', { origin: 'top' })
 ScrollReveal().reveal('.home-content h1, .sobremi-img', { origin: 'left' })
 ScrollReveal().reveal('.home-content p, .sobremi-content', { origin: 'right' })
+ScrollReveal().reveal('.proyectos-container, .contacto', { origin: 'bottom' })
 
 // typewriter
 

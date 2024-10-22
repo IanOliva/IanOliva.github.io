@@ -91,12 +91,22 @@ section {
 }
 
 
-.loader {
+/* Fondo que cubre toda la pantalla */
+.loader-overlay {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999; /* Asegúrate de que esté sobre otros elementos */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9); /* Color de fondo semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Loader original con su tamaño */
+.loader {
   width: 80px;
   height: 40px;
   color: #000;
@@ -108,8 +118,9 @@ section {
     0/0% no-repeat content-box content-box;
   position: relative;
   box-sizing: border-box;
-  animation: l5 2s infinite steps(6);
+  animation: l5 2s steps(6) 2;
 }
+
 .loader::before {
   content: "";
   position: absolute;
@@ -125,9 +136,11 @@ section {
     linear-gradient(#0000        calc(50% - 5px),currentColor 0 calc(50% + 5px),#0000        0) right/2px 100%;
   background-repeat:no-repeat;
 }
+
 @keyframes l5 {
     100% {background-size:120%}
 }
+
 
 /* section home */
 
