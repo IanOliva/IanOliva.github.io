@@ -1,0 +1,51 @@
+[
+    {
+      "img": "assets/img/ecommerce.png",
+      "alt": "ecommerce",
+      "title": "Ecommerce",
+      "description": "Proyecto de Ecommerce",
+      "technologies": "PHP, Bootstrap, Mysql",
+      "link": "#"
+    },
+    {
+      "img": "assets/img/cap proyecto role game.png",
+      "alt": "Role Game",
+      "title": "Role Game",
+      "description": "Proyecto de juego de rol",
+      "technologies": "HTML, CSS, Javascript",
+      "link": "#"
+    },
+    {
+      "img": "assets/img/ticket-track.png",
+      "alt": "Sistema de Tickets",
+      "title": "Ticket Track",
+      "description": "Sistema de Tickets",
+      "technologies": "Node.js, Express, Mysql",
+      "link": "https://ticket-track-lilac.vercel.app"
+    },
+    {
+      "img": "assets/img/cap proyecto card.png",
+      "alt": "Business Card",
+      "title": "Business Card",
+      "description": "Proyecto de tarjeta personal",
+      "technologies": "HTML, CSS",
+      "link": "#"
+    },
+    {
+      "img": "assets/img/en desarrollo.png",
+      "alt": "Elite Gym",
+      "title": "Elite Gym",
+      "description": "Landing page",
+      "technologies": "Laravel 11",
+      "link": "#"
+    },
+    {
+      "img": "assets/img/en desarrollo.png",
+      "alt": "Proximamente",
+      "title": "",
+      "description": "",
+      "technologies": "",
+      "link": "#"
+    }
+  ]
+  

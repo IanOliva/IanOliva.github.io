@@ -12,20 +12,19 @@
     <!-- fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Bebas+Neue&family=Source+Sans+3&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Bebas+Neue&family=Source+Sans+3&display=swap"
+      rel="stylesheet" />
     <!-- iconos -->
-    <script
-      src="https://kit.fontawesome.com/84f1588987.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/84f1588987.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <div class="loader-overlay">
       <div class="loader"></div>
+    </div>
+
+    <div class="floating-btn">
+      <a href="#home"><i class="fa-solid fa-angles-down"></i></a>
     </div>
 
     <div id="particles-js"></div>
@@ -40,6 +39,7 @@
       <nav class="navbar">
         <a href="#home" class="active">Inicio</a>
         <a href="#sobremi">Sobre mi</a>
+        <a href="#timeline">Estudios</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#contacto">Contacto</a>
       </nav>
@@ -164,30 +164,10 @@
 
     <!-- section Educacion -->
 
-    <section class="timeline">
-      <h2 class="heading timeline-title">Estudios</h2>
+    <section class="timeline" id="timeline">
+      <h2 class="heading timeline-title">Formación <span>académica</span></h2>
     
-      <!-- Primer estudio -->
-      <details class="timeline-item left">
-        <summary>Licenciatura en Ciencias de la Computación <span>(2015 - 2019)</span> </summary>
-        <p>Institución: Universidad Nacional</p>
-        <p>Descripción: Estudio enfocado en el desarrollo de software, algoritmos, estructuras de datos y sistemas operativos. Proyecto de fin de carrera sobre inteligencia artificial aplicada a la automatización de procesos.</p>
-      </details>
-    
-      <!-- Segundo estudio -->
-      <details class="timeline-item right">
-        <summary>Máster en Ingeniería de Software <span>(2019 - 2022)</span></summary>
-        <p>Institución: Universidad Politécnica</p>
-        <p>Descripción: Especialización en diseño de arquitecturas de software, gestión de proyectos tecnológicos y metodologías ágiles. Tesis sobre la implementación de microservicios en aplicaciones web de alto rendimiento.</p>
-      </details>
-    
-      <!-- Tercer estudio -->
-      <details class="timeline-item left">
-        <summary>Curso de Desarrollo Web Full-Stack <span>(2022 - 2023)</span></summary>
-        <p>Institución: Platzi</p>
-        <p>Descripción: Curso intensivo enfocado en tecnologías front-end y back-end como HTML, CSS, JavaScript, Node.js, y bases de datos relacionales. Proyecto final de ecommerce utilizando MERN stack.</p>
-      </details>
-    
+      <!-- contenido obtenido desde json -->
       
     </section>
     
@@ -197,67 +177,7 @@
     <section class="proyectos" id="proyectos">
       <h2 class="heading">Mis <span>proyectos</span></h2>
       <div class="proyectos-container">
-        <div class="proyectos-card">
-          <img src="assets/img/ecommerce.png" alt="ecommerce" />
-          <div class="proyectos-layer">
-            <h4>Ecommerce</h4>
-            <p>Proyecto de Ecommerce</p>
-            <p>PHP, Bootstrap, Mysql</p>
-            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
-
-        <div class="proyectos-card">
-          <img src="assets/img/cap proyecto role game.png" alt="ecommerce" />
-          <div class="proyectos-layer">
-            <h4>Role Game</h4>
-            <p>Proyecto de juego de rol</p>
-            <p>HTML, CSS, JAVASCRIPT</p>
-            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
-
-        <div class="proyectos-card">
-          <img src="assets/img/ticket-track.png" alt="Sistema de Tickets" />
-          <div class="proyectos-layer">
-            <h4>Ticket Track</h4>
-            <p>Sistema de Tickets</p>
-            <p>Node.js, express, mysql</p>
-            <a href="https://ticket-track-lilac.vercel.app"
-              ><i class="fa-solid fa-up-right-from-square"></i
-            ></a>
-          </div>
-        </div>
-
-        <div class="proyectos-card">
-          <img src="assets/img/cap proyecto card.png" alt="Business card" />
-          <div class="proyectos-layer">
-            <h4>Bussiness Card</h4>
-            <p>Proyecto de tarjeta personal</p>
-            <p>HTML, CSS</p>
-            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
-
-        <div class="proyectos-card">
-          <img src="assets/img/en desarrollo.png" alt="Elite Gym" />
-          <div class="proyectos-layer">
-            <h4>Elite Gym</h4>
-            <p>Landing page</p>
-            <p>Laravel 11</p>
-            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
-
-        <div class="proyectos-card">
-          <img src="assets/img/en desarrollo.png" alt="Proximamente" />
-          <div class="proyectos-layer">
-            <h4></h4>
-            <p></p>
-            <p></p>
-            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
+        <!-- el contenido se carga desde el json -->
       </div>
     </section>
 
@@ -277,13 +197,7 @@
         <div class="input-box">
           <input type="text" placeholder="Asunto" name="asunto" />
         </div>
-        <textarea
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Escribe tu mensaje"
-          name="mensaje"
-        ></textarea>
+        <textarea id="" cols="30" rows="10" placeholder="Escribe tu mensaje" name="mensaje"></textarea>
         <input type="submit" value="Enviar mensaje" class="btn" />
       </form>
     </section>

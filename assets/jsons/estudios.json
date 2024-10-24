@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Técnico universitario en programación",
+        "date": "(2021-2024)",
+        "institution": "Universidad Tecnológica Nacional (UTN)",
+        "description": "Estudio enfocado en el desarrollo de software, algoritmos, estructuras de datos y sistemas operativos."
+    },
+    {
+        "title": "Desarrollador Web Full-Stack Node.js",
+        "date": "(2024)",
+        "institution": "Codo a codo 4.0",
+        "description": "Estudio enfocado en desarrollo backend con node.js y express."
+    },
+    {
+        "title": "Reparador de PC",
+        "date": "(2022)",
+        "institution": "Comunidad Reparando",
+        "description": "Reparación y mantenimiento de computadoras de escritorio y notebooks."
+    },
+    {
+        "title": "Soporte en Tecnologías de la información",
+        "date": "(2021)",
+        "institution": "Google + Junior Achievement Arg",
+        "description": "Asistencia Técnica, Redes, Sistemas operativos, Administración de sistemas e infraestructura IT, Seguridad informática."
+    },
+    {
+        "title": "Practico en diseño grafico",
+        "date": "(2018)",
+        "institution": "Centro de formación profesional N° 407",
+        "description": "Manejo de herramientas de edición de imágenes."
+    }
+]
