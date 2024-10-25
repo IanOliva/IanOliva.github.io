@@ -67,7 +67,7 @@ const typed = new Typed(".multiple-text", {
 
 // boton flotante
 // Lista de secciones que el botón recorrerá
-const sections = ['#home', '#sobremi', '#proyectos','#timeline', '#contacto'];
+const sections = ['#home', '#sobremi','#timeline', '#proyectos', '#contacto'];
 let currentSectionIndex = 0;
 
 // Referencia al botón
