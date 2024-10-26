@@ -71,7 +71,7 @@ const sections = ['#home', '#sobremi','#timeline', '#proyectos', '#contacto'];
 let currentSectionIndex = 0;
 
 // Referencia al botón
-const floatingButton = document.querySelector('.floating-btn a');
+const floatingButton = document.querySelector('.floating-btn');
 
 // Función que realiza el scroll suave
 function scrollToNextSection() {

@@ -146,7 +146,7 @@ section {
 }
 
 /* boton flotante */
-.floating-btn {
+.floating-btn  {
   position: fixed;
   bottom: 20px; /* Espacio desde la parte inferior */
   right: 20px; /* Espacio desde la parte derecha */
@@ -156,14 +156,16 @@ section {
   width: 50px;
   height: 50px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para el botón */
   z-index: 1000; /* Asegúrate de que esté sobre el contenido */
   cursor: pointer;
   transition: all 0.3s ease;
   animation: heartbeat 2s ease-in-out infinite both;
 }
+
+
 
 @keyframes heartbeat {
   from {
