@@ -1,234 +1,185 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ian Oliva Portfolio</title>
-    <link
-      rel="shortcut icon"
-      href="assets/icons/favicon.ico"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="css/styleindex.css" />
-    <!-- fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Bebas+Neue&family=Source+Sans+3&display=swap"
-      rel="stylesheet" />
-    <!-- iconos -->
-    <script src="https://kit.fontawesome.com/84f1588987.js" crossorigin="anonymous"></script>
-  </head>
 
-  <body>
-    <div class="loader-overlay">
-      <div class="loader"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ian Oliva Portfolio</title>
+  <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/styleindex.css" />
+  <!-- fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Bebas+Neue&family=Source+Sans+3&display=swap"
+    rel="stylesheet" />
+  <!-- iconos -->
+  <script src="https://kit.fontawesome.com/84f1588987.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <div id="particles-js"></div>
+
+  <header class="header">
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home" class="active">Inicio</a>
+      <a href="#sobremi">Sobre mi</a>
+      <a href="#timeline">Estudios</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- section home -->
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Hola! soy <span>Ian Oliva</span></h1>
+
+      <h3><span class="multiple-text"></span></h3>
+      <p>
+        En busca de poder insertarme en el rubro de la tecnología, capacitado
+        en soft skills, estoy dispuesto a escuchar ofertas laborales
+        aprendiendo y aceptando nuevos desafios.
+      </p>
+      <hr />
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/ian-oliva-it/" target="_blank" aria-label="linkedin">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/IanOliva" target="_blank" aria-label="github">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/_ian.olv_/?igsh=ajhsb3BpaHI3amg1" target="_blank" aria-label="instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+      <a href="assets/docs/Ián Oliva CV.pdf" target="_blank" class="btn">Ver CV</a>
+    </div>
+  </section>
+
+  <!-- section sobremi -->
+
+  <section class="sobremi" id="sobremi">
+    <div class="sobremi-img">
+      <img src="assets/img/gifsobremi.gif" alt="profile-pic" />
     </div>
 
-    <div class="floating-btn">
-      <a href="#home"><i class="fa-solid fa-angles-down"></i></a>
+    <div class="sobremi-content">
+      <h2 class="heading">Sobre <span>mi</span></h2>
+      <h3>Programador | Buenos Aires</h3>
+      <p>
+        Soy Ian Oliva, un apasionado programador jr con formación académica en
+        la Universidad Tecnológica Nacional. Mi viaje en el mundo de la
+        programación comenzó durante mis estudios, donde adquirí una sólida
+        base en conceptos clave y desarrollé habilidades en diversas
+        tecnologías. No solo obtuve conocimientos técnicos, sino también
+        desarrollé habilidades de trabajo en equipo y resolución de problemas
+        entre demás Softs Skills. Mi objetivo es contribuir de manera
+        significativa en un equipo de desarrollo, aplicando mi pasión por la
+        programación y mi deseo de aprender y crecer.
+      </p>
+
+      <p>Tecnologías y herramientas que manejo:</p>
+      <div class="slider-container">
+        <ul class="slider">
+          <li class="slider-item">
+            <img src="assets/icons/html-5.png" alt="html logo" />
+          </li>
+          <li class="slider-item">
+            <img src="assets/icons/css-3.png" alt="css logo" />
+          </li>
+          <li class="slider-item">
+            <img src="assets/icons/javascript.png" alt="js logo" />
+          </li>
+          <li class="slider-item">
+            <img src="assets/icons/bootstrap.png" alt="bootstrap logo" />
+          </li>
+          <li class="slider-item">
+            <img src="assets/icons/figma.png" alt="figma logo" />
+          </li>
+          <li class="slider-item">
+            <img src="assets/icons/photoshop.png" alt="photoshop logo" />
+          </li>
+          <li class="slider-item">
+            <img src="assets/icons/php.png" alt="php logo" />
+          </li>
+          <li class="slider-item">
+            <img src="assets/icons/mysql.png" alt="mysql logo" />
+          </li>
+        </ul>
+      </div>
+      <p>
+        Estoy dedicando mi tiempo a proyectos personales que están reforzando
+        mi habilidad para enfrentar desafíos y resolver problemas de manera
+        creativa.
+      </p>
+
+      <p>Actualmente aprendiendo: <strong>Fullstack React.js</strong></p>
+      <a href="https://www.linkedin.com/in/ian-oliva-it/" target="_blank" aria-label="linkedin" class="btn">Ver mas</a>
     </div>
+  </section>
 
-    <div id="particles-js"></div>
+  <!-- section Educacion -->
 
-    <header class="header">
-      <!-- <a href="/" class="logo">Ian <span>Oliva</span> </a> -->
-      <!-- <button id="toggle-button" class="theme-toggle">
-            <img src="assets/icons/light-theme.png" id="sun-icon" alt="sun icon" />
-            <img src="assets/icons/dark-theme.png" id="moon-icon" alt="moon icon" class="hidden" />
-        </button> -->
-      <i class="fa-solid fa-bars" id="menu-icon"></i>
-      <nav class="navbar">
-        <a href="#home" class="active">Inicio</a>
-        <a href="#sobremi">Sobre mi</a>
-        <a href="#timeline">Estudios</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-    </header>
+  <section class="timeline" id="timeline">
+    <h2 class="heading timeline-title">Formación <span>académica</span></h2>
 
-    <!-- section home -->
+    <!-- contenido obtenido desde json -->
 
-    <section class="home" id="home">
-      <div class="home-content">
-        <h1>Hola! soy <span>Ian Oliva</span></h1>
+  </section>
 
-        <h3><span class="multiple-text"></span></h3>
-        <p>
-          En busca de poder insertarme en el rubro de la tecnología, capacitado
-          en soft skills, estoy dispuesto a escuchar ofertas laborales
-          aprendiendo y aceptando nuevos desafios.
-        </p>
-        <hr />
-        <div class="social-media">
-          <a
-            href="https://www.linkedin.com/in/ian-oliva-it/"
-            target="_blank"
-            aria-label="linkedin"
-          >
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a
-            href="https://github.com/IanOliva"
-            target="_blank"
-            aria-label="github"
-          >
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/_ian.olv_/?igsh=ajhsb3BpaHI3amg1"
-            target="_blank"
-            aria-label="instagram"
-          >
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        </div>
-        <a href="assets/docs/Ián Oliva CV.pdf" target="_blank" class="btn"
-          >Ver CV</a
-        >
+
+  <!-- section proyectos -->
+
+  <section class="proyectos" id="proyectos">
+    <h2 class="heading">Mis <span>proyectos</span></h2>
+    <div class="proyectos-container">
+      <!-- el contenido se carga desde el json -->
+    </div>
+  </section>
+
+  <!-- section contacto -->
+
+  <section class="contacto" id="contacto">
+    <h2 class="heading">Dejame un mensaje <span>o sugerencia</span></h2>
+
+    <form action="https://formsubmit.co/7429be194219ea71f9313eae513ae943" method="post">
+      <div class="input-box">
+        <input type="text" placeholder="Nombre" name="nombre" />
+        <input type="email" placeholder="Email" name="email" />
       </div>
-
-      <!-- <div class="home-img">
-                <img src="assets/img/programmer.png" alt="programer logo">
-            </div> -->
-    </section>
-
-    <!-- section sobremi -->
-
-    <section class="sobremi" id="sobremi">
-      <div class="sobremi-img">
-        <img
-          src="assets/img/profile-pic__2_-removebg-preview-transformed.png"
-          alt="profile-pic"
-        />
+      <div class="input-box">
+        <input type="text" placeholder="Asunto" name="asunto" />
       </div>
+      <textarea id="" cols="30" rows="10" placeholder="Escribe tu mensaje" name="mensaje"></textarea>
+      <input type="submit" value="Enviar mensaje" class="btn" />
+    </form>
+  </section>
 
-      <div class="sobremi-content">
-        <h2 class="heading">Sobre <span>mi</span></h2>
-        <h3>Programador | Buenos Aires</h3>
-        <p>
-          Soy Ian Oliva, un apasionado programador jr con formación académica en
-          la Universidad Tecnológica Nacional. Mi viaje en el mundo de la
-          programación comenzó durante mis estudios, donde adquirí una sólida
-          base en conceptos clave y desarrollé habilidades en diversas
-          tecnologías. No solo obtuve conocimientos técnicos, sino también
-          desarrollé habilidades de trabajo en equipo y resolución de problemas
-          entre demás Softs Skills. Mi objetivo es contribuir de manera
-          significativa en un equipo de desarrollo, aplicando mi pasión por la
-          programación y mi deseo de aprender y crecer.
-        </p>
+  <!-- footer -->
 
-        <p>Tecnologías y herramientas que manejo:</p>
-        <div class="slider-container">
-          <ul class="slider">
-            <li class="slider-item">
-              <img src="assets/icons/html-5.png" alt="html logo" />
-            </li>
-            <li class="slider-item">
-              <img src="assets/icons/css-3.png" alt="css logo" />
-            </li>
-            <li class="slider-item">
-              <img src="assets/icons/javascript.png" alt="js logo" />
-            </li>
-            <li class="slider-item">
-              <img src="assets/icons/bootstrap.png" alt="bootstrap logo" />
-            </li>
-            <li class="slider-item">
-              <img src="assets/icons/figma.png" alt="figma logo" />
-            </li>
-            <li class="slider-item">
-              <img src="assets/icons/photoshop.png" alt="photoshop logo" />
-            </li>
-            <li class="slider-item">
-              <img src="assets/icons/php.png" alt="php logo" />
-            </li>
-            <li class="slider-item">
-              <img src="assets/icons/mysql.png" alt="mysql logo" />
-            </li>
-          </ul>
-        </div>
-        <p>
-          Estoy dedicando mi tiempo a proyectos personales que están reforzando
-          mi habilidad para enfrentar desafíos y resolver problemas de manera
-          creativa.
-        </p>
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Ian Oliva responsive portfolio proyect</p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#home"><i class="fa-solid fa-angles-up"></i></a>
+    </div>
+  </footer>
 
-        <p>Actualmente aprendiendo: <strong>Fullstack Node.js</strong></p>
-        <a
-          href="https://www.linkedin.com/in/ian-oliva-it/"
-          target="_blank"
-          aria-label="linkedin"
-          class="btn"
-          >Ver mas</a
-        >
-      </div>
-    </section>
+  <!-- scroll reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- typed js -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!-- particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="Javascript/particles/particles.js"></script>
+  <!-- custom js -->
+  <script src="Javascript/index.js"></script>
 
-    <!-- section Educacion -->
+  
+</body>
 
-    <section class="timeline" id="timeline">
-      <h2 class="heading timeline-title">Formación <span>académica</span></h2>
-    
-      <!-- contenido obtenido desde json -->
-      
-    </section>
-    
-
-    <!-- section proyectos -->
-
-    <section class="proyectos" id="proyectos">
-      <h2 class="heading">Mis <span>proyectos</span></h2>
-      <div class="proyectos-container">
-        <!-- el contenido se carga desde el json -->
-      </div>
-    </section>
-
-    <!-- section contacto -->
-
-    <section class="contacto" id="contacto">
-      <h2 class="heading">Dejame un mensaje <span>o sugerencia</span></h2>
-
-      <form
-        action="https://formsubmit.co/7429be194219ea71f9313eae513ae943"
-        method="post"
-      >
-        <div class="input-box">
-          <input type="text" placeholder="Nombre" name="nombre" />
-          <input type="email" placeholder="Email" name="email" />
-        </div>
-        <div class="input-box">
-          <input type="text" placeholder="Asunto" name="asunto" />
-        </div>
-        <textarea id="" cols="30" rows="10" placeholder="Escribe tu mensaje" name="mensaje"></textarea>
-        <input type="submit" value="Enviar mensaje" class="btn" />
-      </form>
-    </section>
-
-    <!-- footer -->
-
-    <footer class="footer">
-      <div class="footer-text">
-        <p>Ian Oliva responsive portfolio proyect</p>
-      </div>
-      <div class="footer-iconTop">
-        <a href="#home"><i class="fa-solid fa-angles-up"></i></a>
-      </div>
-    </footer>
-
-    <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- typed js -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <!-- particles.js -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="Javascript/particles/particles.js"></script>
-    <!-- custom js -->
-    <script src="Javascript/index.js"></script>
-
-    <script>
-        document.querySelector(".loader").addEventListener("animationend", function () {
-            // Oculta el contenedor del loader después de que termine la animación
-            document.querySelector(".loader-overlay").style.display = "none";
-          });
-
-    </script>
-  </body>
 </html>

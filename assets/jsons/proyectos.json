@@ -8,6 +8,14 @@
       "link": "#"
     },
     {
+      "img": "assets/img/ecommerceRemake.png",
+      "alt": "Ecommerce Remake",
+      "title": "Ecommerce Remake",
+      "description": "Proyecto de Ecommerce recreado con Laravel 11",
+      "technologies": "PHP, laravel, Bootstrap, Mysql",
+      "link": "#"
+    },
+    {
       "img": "assets/img/cap proyecto role game.png",
       "alt": "Role Game",
       "title": "Role Game",
@@ -17,26 +25,34 @@
     },
     {
       "img": "assets/img/ticket-track.png",
-      "alt": "Sistema de Tickets",
+      "alt": "Sistema de Tickets de incidencias",
       "title": "Ticket Track",
       "description": "Sistema de Tickets",
       "technologies": "Node.js, Express, Mysql",
       "link": "https://ticket-track-lilac.vercel.app"
     },
     {
-      "img": "assets/img/cap proyecto card.png",
-      "alt": "Business Card",
-      "title": "Business Card",
-      "description": "Proyecto de tarjeta personal",
-      "technologies": "HTML, CSS",
+      "img": "assets/img/multometro.png",
+      "alt": "multometro",
+      "title": "Multometro",
+      "description": "sistema para gestionar multas de trafico",
+      "technologies": "Node.js, Tailwind, Mysql",
       "link": "#"
     },
     {
-      "img": "assets/img/en desarrollo.png",
-      "alt": "Elite Gym",
-      "title": "Elite Gym",
-      "description": "Landing page",
-      "technologies": "Laravel 11",
+      "img": "assets/img/avanti.png",
+      "alt": "avanti",
+      "title": "Avanti",
+      "description": "Plataforma de crowd funding",
+      "technologies": "Node.js, Express, Mongodb, mongoose",
+      "link": "#"
+    },
+    {
+      "img": "assets/img/QRManager.png",
+      "alt": "qr manager",
+      "title": "QR Manager",
+      "description": "Sistema para generar y editar codigos QR",
+      "technologies": "Node.js, Express, Mysql, sequelize, Tailwind",
       "link": "#"
     },
     {

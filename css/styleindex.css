@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Bebas+Neue&family=Source+Sans+3&display=swap");
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -74,16 +74,6 @@ section {
   display: none;
 }
 
-.theme-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.theme-toggle img {
-  width: 3rem;
-  height: 3rem;
-}
 
 #particles-js {
   position: fixed;
@@ -322,9 +312,9 @@ span {
 
 .sobremi-img img {
   width: 35vw;
-  border: 2px solid var(--main-color);
-  border-radius: 50%;
-  box-shadow: 0 0 1rem var(--main-color);
+  
+  border-radius: 12px;
+  
 }
 
 .heading {
@@ -459,21 +449,10 @@ details p {
 }
 
 
-
-
 /* section proyectos */
 
 .proyectos {
-  background-color: #323946;
-  opacity: 0.9;
-  background-image: radial-gradient(circle at center center, #000000, #323946),
-    repeating-radial-gradient(circle at center center,
-      #000000,
-      #000000,
-      22px,
-      transparent 44px,
-      transparent 22px);
-  background-blend-mode: multiply;
+  background-color: var(--bg-color);
 }
 
 .proyectos .heading {

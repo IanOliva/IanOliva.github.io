@@ -49,7 +49,7 @@ ScrollReveal({
   delay: 400,
 });
 
-ScrollReveal().reveal(".home-content", { origin: "top", delay: 4000 });
+ScrollReveal().reveal(".home-content", { origin: "top" });
 ScrollReveal().reveal(".heading", { origin: "top" });
 ScrollReveal().reveal(".home-content h1, .sobremi-img", { origin: "left" });
 ScrollReveal().reveal(".home-content p, .sobremi-content", { origin: "right" });
@@ -65,41 +65,6 @@ const typed = new Typed(".multiple-text", {
   loop: true,
 });
 
-// boton flotante
-// Lista de secciones que el botón recorrerá
-const sections = ['#home', '#sobremi','#timeline', '#proyectos', '#contacto'];
-let currentSectionIndex = 0;
-
-// Referencia al botón
-const floatingButton = document.querySelector('.floating-btn');
-
-// Función que realiza el scroll suave
-function scrollToNextSection() {
-  currentSectionIndex = (currentSectionIndex + 1) % sections.length; // Ciclar entre secciones
-  const nextSection = document.querySelector(sections[currentSectionIndex]);
-  nextSection.scrollIntoView({ behavior: 'smooth' });
-}
-
-// Escuchar el clic en el botón
-floatingButton.addEventListener('click', (event) => {
-  event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
-  scrollToNextSection();
-});
-
-
-// theme toggle
-
-// const body = document.querySelector("body");
-// const toggleButton = document.querySelector("#toggle-button");
-// const moonIcon = document.querySelector("#moon-icon");
-// const sunIcon = document.querySelector("#sun-icon");
-
-// toggleButton.addEventListener("click", () => {
-//   body.classList.toggle("dark-theme");
-//   toggleButton.classList.toggle("active");
-//   moonIcon.classList.toggle("hidden");
-//   sunIcon.classList.toggle("hidden");
-// })
 
 // crear seccion proyectos consumiendo el json
 
